@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Apple
+  - Obstacle
   layers:
   - Default
   - TransparentFX

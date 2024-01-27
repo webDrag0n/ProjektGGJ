@@ -18,6 +18,7 @@ public class PlayerHeadCollide : MonoBehaviour
         if (collisionSpeed > headHitThreshold)
         {
             Debug.Log("Character died!");
+            transform.position = Vector3.zero; transform.rotation = Quaternion.identity;
             // TODO: Death logic
             // manager.GameOver();
         }

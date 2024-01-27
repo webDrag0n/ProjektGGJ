@@ -26,7 +26,7 @@ namespace Interactables
             IEnumerator wait()
             {
                 yield return new WaitForSeconds(time);
-                Debug.Log("Debounce");
+                Debug.Log("debounce");
                 bouncyMaterial.bounciness = 0;
                 collide.sharedMaterial = bouncyMaterial;
             }

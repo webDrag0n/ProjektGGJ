@@ -29,7 +29,7 @@ public class HammerTest : MonoBehaviour
         // TODO: Optimize this
         character.centerOfMass = new Vector2(0, -1);
         
-        pid = new PID(5e-3f, -1e-3f, 1e-2f);
+        pid = new PID(5e-3f, 1e-3f, 1e-2f);
     }
 
     void Update()

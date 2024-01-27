@@ -299,7 +299,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -331,7 +331,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.09939085, y: 0.45796418}
+  m_ConnectedAnchor: {x: 0.09939094, y: 0.45796415}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
   rayMask:
     serializedVersion: 2
     m_Bits: 1
-  raycastDistance: 1
+  groundRaycastDistance: 1
   forceTag:
   - Ground
   - Enemy
@@ -367,9 +367,9 @@ MonoBehaviour:
   counterForce:
   - 100
   - 20
-  punchBackForce: 0
-  punchForce: 30
+  maxTorque: 300
   punchCooldown: 1
+  uppercutForce: []
   punchDist: 1.5
 --- !u!70 &5428646932644990518
 CapsuleCollider2D:
@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 635530037557724253}
   - component: {fileID: 823860612830668844}
   - component: {fileID: 4808573204292764988}
+  - component: {fileID: 7475604333497539669}
   m_Layer: 6
   m_Name: Hammer
   m_TagString: Untagged
@@ -752,6 +753,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7475604333497539669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361094071894078335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821b5a0eb98c38241814ebb0b36fb9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game_state: {fileID: 11400000, guid: c65118ecb653c0845938f412c775c80c, type: 2}
 --- !u!1 &4394724237264255918
 GameObject:
   m_ObjectHideFlags: 0

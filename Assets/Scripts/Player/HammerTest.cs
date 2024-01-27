@@ -37,13 +37,13 @@ public class HammerTest : MonoBehaviour
     {
         hinge = character.GetComponent<HingeJoint2D>();
         motor = hinge.motor;
-        motor.maxMotorTorque = 500;
+        motor.maxMotorTorque = 300;
         hinge.useMotor = true;
         
         // TODO: Optimize this
         character.centerOfMass = new Vector2(0, -1);
         
-        pid = new PID(1e-3f, 1e-4f, 1e-3f);
+        pid = new PID(1e-2f, 0f, 1e-2f);
     }
 
     void Update()
@@ -59,7 +59,7 @@ public class HammerTest : MonoBehaviour
             hammer.transform.eulerAngles) * Vector3.down).normalized;
 
         var angle = GetAngle(mouseDirection, hingeDirection);
-        SetSpeed(-Mathf.Atan(angle)*500);
+        SetSpeed(-Mathf.Atan(angle)*600);
         
         UpdateRotateCount();
         

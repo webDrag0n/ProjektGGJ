@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Interactables;
 using UnityEngine;
 
 // TODO:相机检测地图边缘，drag优美曲线
@@ -150,7 +151,15 @@ public class HammerTest : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.Log("Punch hit:" + hit.collider.tag);
-
+            try
+            {
+                hit.collider.GetComponent<Bouncy>().EnableBounce();
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
+            
             int index = 0;
             foreach (var tag in forceTag)
             {

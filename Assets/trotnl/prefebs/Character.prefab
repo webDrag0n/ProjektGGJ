@@ -603,8 +603,8 @@ GameObject:
   - component: {fileID: 1474193979430587856}
   - component: {fileID: 635530037557724253}
   - component: {fileID: 823860612830668844}
-  - component: {fileID: 4808573204292764988}
   - component: {fileID: 7475604333497539669}
+  - component: {fileID: 3374276461159753658}
   m_Layer: 6
   m_Name: Hammer
   m_TagString: Untagged
@@ -708,8 +708,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &4808573204292764988
-BoxCollider2D:
+--- !u!114 &7475604333497539669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361094071894078335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821b5a0eb98c38241814ebb0b36fb9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game_state: {fileID: 11400000, guid: c65118ecb653c0845938f412c775c80c, type: 2}
+--- !u!60 &3374276461159753658
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -750,22 +763,23 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &7475604333497539669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4361094071894078335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 821b5a0eb98c38241814ebb0b36fb9dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  game_state: {fileID: 11400000, guid: c65118ecb653c0845938f412c775c80c, type: 2}
+  m_Points:
+    m_Paths:
+    - - {x: -0.40983003, y: 0.5012925}
+      - {x: -0.7236683, y: 0.2763661}
+      - {x: -0.80523866, y: 0.08018376}
+      - {x: -0.6664473, y: -0.012547413}
+      - {x: -0.8051548, y: -0.21888715}
+      - {x: -0.5150283, y: -0.38626283}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.91308475, y: -0.45082855}
+      - {x: 0.90481544, y: -0.3218931}
+      - {x: 0.6593254, y: -0.26376358}
+      - {x: 0.8875579, y: -0.16315313}
+      - {x: 0.916381, y: -0.00535354}
+      - {x: 0.34220243, y: 0.049981378}
+      - {x: 0.5, y: 0.5}
+  m_UseDelaunayMesh: 0
 --- !u!1 &4394724237264255918
 GameObject:
   m_ObjectHideFlags: 0

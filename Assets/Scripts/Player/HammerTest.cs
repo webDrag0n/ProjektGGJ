@@ -15,9 +15,12 @@ public class HammerTest : MonoBehaviour
     private PID pid;
 
     // TODO: Do we need a new layer?
-    public LayerMask groundMask;
+    public LayerMask rayMask;
     public float raycastDistance = 1f;
     private bool isGrounded;
+
+    private Vector3 mouseDirection;
+    private Vector3 hingeDirection;
 
     private void Start()
     {
@@ -39,15 +42,22 @@ public class HammerTest : MonoBehaviour
         mousePosition.z = 0f;
 
         // Calculate the direction from the character to the mouse
-        Vector3 mouseDirection = (mousePosition - character.transform.position).normalized;
+        mouseDirection = (mousePosition - character.transform.position).normalized;
         
-        Vector3 hingeDirection = (Quaternion.Euler(
+        hingeDirection = (Quaternion.Euler(
             hammer.transform.eulerAngles) * Vector3.down).normalized;
 
         var angle = GetAngle(mouseDirection, hingeDirection);
         SetSpeed(-Mathf.Atan(angle)*1000);
         
         UpdateRotateCount();
+        
+        // Check for player input to punch an enemy
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time - lastPunchTime > punchCooldown)
+        {
+            Punch();
+            lastPunchTime = Time.time;
+        }
     }
 
     private void FixedUpdate()
@@ -110,9 +120,48 @@ public class HammerTest : MonoBehaviour
     private void UpdateGrounded()
     {
         // Perform a raycast downwards
-        RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, raycastDistance, groundMask);
-
-        isGrounded = hit.collider != null;
+        RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, raycastDistance);
+        if (hit.collider)
+        {
+            isGrounded = hit.collider.CompareTag("Ground");
+        }
     }
     
+    public float punchForce = 50f;
+    public float punchCooldown = 1f;
+    public float punchGroundForce = 50f;
+    
+    [Tooltip("Send your enemy flying")]
+    public float punchKnockUp = 20f;
+    public float punchDist = 1f;
+
+    private float lastPunchTime;
+
+    void Punch()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(hammer.transform.position, hingeDirection, punchDist, rayMask);
+
+        if (hit.collider != null)
+        {
+            Debug.Log(hit.collider.tag);
+            if (hit.collider.CompareTag("Enemy"))
+            {
+                // Apply force to the enemy
+                Rigidbody2D enemyRigidbody = hit.collider.GetComponent<Rigidbody2D>();
+                if (enemyRigidbody)
+                {
+                    
+                    enemyRigidbody.AddForce(hingeDirection * punchForce + Vector3.up * punchKnockUp, ForceMode2D.Impulse);
+                }
+
+                // Apply force to the character (knock back)
+                character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * punchForce, ForceMode2D.Impulse);
+            }
+            else if (hit.collider.CompareTag("Ground"))
+            {
+                character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * punchGroundForce, ForceMode2D.Impulse);
+            }
+        }
+    }
 }
+

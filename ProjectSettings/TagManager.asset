@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - Enemy
   - Ground
+  - Box
+  - Rock
   layers:
   - Default
   - TransparentFX

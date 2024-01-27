@@ -32,7 +32,7 @@ public class HammerTest : MonoBehaviour
         // TODO: Optimize this
         character.centerOfMass = new Vector2(0, -1);
         
-        pid = new PID(5e-3f, 1e-3f, 1e-2f);
+        // pid = new PID(5e-3f, 1e-3f, 1e-2f);
     }
 
     void Update()
@@ -65,10 +65,6 @@ public class HammerTest : MonoBehaviour
         var current = character.transform.eulerAngles.z - rotateCount * 360;
         
         var torque = pid.Update(0, current, 0.02f);
-        if (torque > 10f)
-        {
-            Debug.Log(torque);
-        }
         
         character.AddTorque(torque, ForceMode2D.Impulse);
         
@@ -123,7 +119,8 @@ public class HammerTest : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, raycastDistance, rayMask);
         if (hit.collider)
         {
-            isGrounded = hit.collider.CompareTag("Ground");
+            // isGrounded = hit.collider.CompareTag("Ground");
+            isGrounded = true;
             return;
         }
 
@@ -153,7 +150,6 @@ public class HammerTest : MonoBehaviour
                 Rigidbody2D enemyRigidbody = hit.collider.GetComponent<Rigidbody2D>();
                 if (enemyRigidbody)
                 {
-                    
                     enemyRigidbody.AddForce(hingeDirection * punchForce + Vector3.up * punchKnockUp, ForceMode2D.Impulse);
                 }
 

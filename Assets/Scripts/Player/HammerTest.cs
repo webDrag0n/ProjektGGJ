@@ -10,10 +10,14 @@ public class HammerTest : MonoBehaviour
     public Rigidbody2D character;
     private HingeJoint2D hinge;
     private JointMotor2D motor;
-    private float mouse;
     private int rotateCount;
     private float lastZ;
     private PID pid;
+
+    // TODO: Do we need a new layer?
+    public LayerMask groundMask;
+    public float raycastDistance = 1f;
+    private bool isGrounded;
 
     private void Start()
     {
@@ -21,15 +25,18 @@ public class HammerTest : MonoBehaviour
         motor = hinge.motor;
         motor.maxMotorTorque = 500;
         hinge.useMotor = true;
+        
+        // TODO: Optimize this
         character.centerOfMass = new Vector2(0, -1);
-        pid = new PID(5e-2f, -1e-3f, 1e-2f);
+        
+        pid = new PID(1e-3f, -1e-3f, 1e-2f);
     }
 
     void Update()
     {
         // Get the mouse position in world coordinates
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0f; // Ensure the z-coordinate is 0 in a 2D project
+        mousePosition.z = 0f;
 
         // Calculate the direction from the character to the mouse
         Vector3 mouseDirection = (mousePosition - character.transform.position).normalized;
@@ -46,9 +53,29 @@ public class HammerTest : MonoBehaviour
     private void FixedUpdate()
     {
         var current = character.transform.eulerAngles.z - rotateCount * 360;
-        Debug.Log(current);
+        
         var torque = pid.Update(0, current, 0.02f);
+        if (torque > 20f)
+        {
+            Debug.Log(torque);
+        }
+        
         character.AddTorque(torque, ForceMode2D.Impulse);
+        
+        UpdateGrounded();
+        
+        if (isGrounded)
+        {
+            if(Input.GetKey(KeyCode.D))
+            {
+                character.AddForce(Vector2.right, ForceMode2D.Impulse);
+            }
+            else if(Input.GetKey(KeyCode.A))
+            {
+                character.AddForce(Vector2.left, ForceMode2D.Impulse);
+            }
+        }
+        
     }
 
     // Get the min angle in rads that can rotate the first vector to the second
@@ -66,6 +93,7 @@ public class HammerTest : MonoBehaviour
         hinge.motor = motor;
     }
 
+    // Keep track of rotation
     void UpdateRotateCount()
     {
         if (lastZ>=340&&character.transform.eulerAngles.z<=20)
@@ -77,6 +105,14 @@ public class HammerTest : MonoBehaviour
             rotateCount++;
         }
         lastZ = character.transform.eulerAngles.z;
+    }
+
+    private void UpdateGrounded()
+    {
+        // Perform a raycast downwards
+        RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, raycastDistance, groundMask);
+
+        isGrounded = hit.collider != null;
     }
     
 }

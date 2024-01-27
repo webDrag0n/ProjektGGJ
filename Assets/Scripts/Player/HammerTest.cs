@@ -138,7 +138,7 @@ public class HammerTest : MonoBehaviour
     public float punchCooldown = 1f;
     
     [Tooltip("Send your enemy flying")]
-    public float uppercutForce = 30f;
+    public List<float> uppercutForce;
     
     public float punchDist = 1f;
 
@@ -169,7 +169,7 @@ public class HammerTest : MonoBehaviour
                     Rigidbody2D other = hit.collider.GetComponent<Rigidbody2D>();
                     if (other)
                     {
-                        other.AddForce(hingeDirection * force[index] + Vector3.up * uppercutForce, ForceMode2D.Impulse);
+                        other.AddForce(hingeDirection * force[index] + Vector3.up * uppercutForce[index], ForceMode2D.Impulse);
                     }
                     
                     // Apply force to the character (knock back)

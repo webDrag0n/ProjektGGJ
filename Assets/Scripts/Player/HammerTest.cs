@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// TODO:相机检测地图边缘，drag优美曲线
 public class HammerTest : MonoBehaviour
 {
     public Rigidbody2D hammer;
@@ -16,18 +16,13 @@ public class HammerTest : MonoBehaviour
 
     // TODO: Do we need a new layer?
     public LayerMask rayMask;
-    public float raycastDistance = 1f;
-
-    // public struct Force
-    // {
-    //     public float force;
-    //     public float counterForce;
-    // }
+    public float groundRaycastDistance = 1f;
+    
     public List<String> forceTag;
     public List<float> force;
     public List<float> counterForce;
+    public float maxTorque = 300f;
     
-    public float punchBackForce;
     private bool isGrounded;
 
     private Vector3 mouseDirection;
@@ -37,7 +32,7 @@ public class HammerTest : MonoBehaviour
     {
         hinge = character.GetComponent<HingeJoint2D>();
         motor = hinge.motor;
-        motor.maxMotorTorque = 300;
+        motor.maxMotorTorque = maxTorque;
         hinge.useMotor = true;
         
         // TODO: Optimize this
@@ -128,7 +123,7 @@ public class HammerTest : MonoBehaviour
     private void UpdateGrounded()
     {
         // Perform a raycast downwards
-        RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, raycastDistance, rayMask);
+        RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, groundRaycastDistance, rayMask);
         if (hit.collider)
         {
             // isGrounded = hit.collider.CompareTag("Ground");
@@ -154,7 +149,7 @@ public class HammerTest : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log(hit.collider.tag);
+            Debug.Log("Punch hit:" + hit.collider.tag);
 
             int index = 0;
             foreach (var tag in forceTag)

@@ -17,6 +17,17 @@ public class HammerTest : MonoBehaviour
     // TODO: Do we need a new layer?
     public LayerMask rayMask;
     public float raycastDistance = 1f;
+
+    // public struct Force
+    // {
+    //     public float force;
+    //     public float counterForce;
+    // }
+    public List<String> forceTag;
+    public List<float> force;
+    public List<float> counterForce;
+    
+    public float punchBackForce;
     private bool isGrounded;
 
     private Vector3 mouseDirection;
@@ -32,7 +43,7 @@ public class HammerTest : MonoBehaviour
         // TODO: Optimize this
         character.centerOfMass = new Vector2(0, -1);
         
-        pid = new PID(5e-3f, 1e-3f, 1e-2f);
+        pid = new PID(1e-3f, 1e-4f, 1e-3f);
     }
 
     void Update()
@@ -48,7 +59,7 @@ public class HammerTest : MonoBehaviour
             hammer.transform.eulerAngles) * Vector3.down).normalized;
 
         var angle = GetAngle(mouseDirection, hingeDirection);
-        SetSpeed(-Mathf.Atan(angle)*1000);
+        SetSpeed(-Mathf.Atan(angle)*500);
         
         UpdateRotateCount();
         
@@ -66,6 +77,7 @@ public class HammerTest : MonoBehaviour
         
         var torque = pid.Update(0, current, 0.02f);
         
+        torque = Mathf.Sign(torque)*Mathf.Min(Mathf.Abs(torque), 10);
         character.AddTorque(torque, ForceMode2D.Impulse);
         
         UpdateGrounded();
@@ -129,10 +141,8 @@ public class HammerTest : MonoBehaviour
     
     public float punchForce = 50f;
     public float punchCooldown = 1f;
-    public float punchGroundForce = 50f;
     
     [Tooltip("Send your enemy flying")]
-    public float punchKnockUp = 20f;
     public float punchDist = 1f;
 
     private float lastPunchTime;
@@ -144,21 +154,25 @@ public class HammerTest : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.Log(hit.collider.tag);
-            if (hit.collider.CompareTag("Enemy"))
+
+            int index = 0;
+            foreach (var tag in forceTag)
             {
-                // Apply force to the enemy
-                Rigidbody2D enemyRigidbody = hit.collider.GetComponent<Rigidbody2D>();
-                if (enemyRigidbody)
+                if (hit.collider.CompareTag(tag))
                 {
-                    enemyRigidbody.AddForce(hingeDirection * punchForce + Vector3.up * punchKnockUp, ForceMode2D.Impulse);
+                    // Apply force to the enemy
+                    Rigidbody2D other = hit.collider.GetComponent<Rigidbody2D>();
+                    if (other)
+                    {
+                        other.AddForce(hingeDirection * punchForce + Vector3.up * force[index], ForceMode2D.Impulse);
+                    }
+                    
+                    // Apply force to the character (knock back)
+                    character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * counterForce[index], ForceMode2D.Impulse);
+                    return;
                 }
 
-                // Apply force to the character (knock back)
-                character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * punchForce, ForceMode2D.Impulse);
-            }
-            else if (hit.collider.CompareTag("Ground"))
-            {
-                character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * punchGroundForce, ForceMode2D.Impulse);
+                index++;
             }
         }
     }

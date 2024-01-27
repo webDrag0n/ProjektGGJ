@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 58678521}
   - component: {fileID: 58678522}
   - component: {fileID: 58678523}
+  - component: {fileID: 58678524}
   m_Layer: 6
   m_Name: Character
   m_TagString: Untagged
@@ -524,10 +525,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   raycastDistance: 1
+  forceTag:
+  - Ground
+  - Enemy
+  force:
+  - 100
+  - 20
+  counterForce:
+  - 100
+  - 20
+  punchBackForce: 0
   punchForce: 30
   punchCooldown: 1
-  punchGroundForce: 50
-  punchKnockUp: 10
   punchDist: 1.5
 --- !u!70 &58678523
 CapsuleCollider2D:
@@ -564,6 +573,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0060516596, y: 0.006051898}
   m_Size: {x: 1.0363104, y: 2.077204}
   m_Direction: 0
+--- !u!1818360609 &58678524
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58678515}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 0
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 0
+  m_Active: 1
+  m_IsLocked: 0
+  m_Sources: []
 --- !u!1 &127153822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,7 +1607,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 3
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

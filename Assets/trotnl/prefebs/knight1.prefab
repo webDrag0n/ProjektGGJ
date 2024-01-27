@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2142527280727635061}
   - component: {fileID: 8030390899950540393}
   m_Layer: 0
-  m_Name: right_hand
+  m_Name: "\u56FE\u5C42 50"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 6519919313838788108}
   - component: {fileID: 187766555684964312}
   m_Layer: 0
-  m_Name: body
+  m_Name: "\u56FE\u5C42 47"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 6866483158100730706}
   - component: {fileID: 236579050118434221}
   m_Layer: 0
-  m_Name: head
+  m_Name: "\u56FE\u5C42 47_1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 663825241836463159}
   - component: {fileID: 6110098142510311745}
   m_Layer: 0
-  m_Name: right_arm
+  m_Name: "\u56FE\u5C42 49"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 4198963297350508631}
   - component: {fileID: 3307193696526774126}
   m_Layer: 0
-  m_Name: sword
+  m_Name: "\u56FE\u5C42 53"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,7 +1131,7 @@ GameObject:
   - component: {fileID: 7548303314031416328}
   - component: {fileID: 6024729893977684624}
   m_Layer: 0
-  m_Name: right_leg
+  m_Name: "\u56FE\u5C42 51_1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1365,7 +1365,7 @@ GameObject:
   - component: {fileID: 8046115638616418001}
   - component: {fileID: 758566270921465464}
   m_Layer: 0
-  m_Name: ragdoll
+  m_Name: "\u65B0\u5EFA\u7EC4_1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1490,7 +1490,7 @@ GameObject:
   - component: {fileID: 8024895413137272128}
   - component: {fileID: 209006509247417789}
   m_Layer: 0
-  m_Name: left_leg
+  m_Name: "\u56FE\u5C42 51"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

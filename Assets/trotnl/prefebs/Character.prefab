@@ -25,8 +25,8 @@ Transform:
   m_GameObject: {fileID: 178129065584497607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0.96, z: 0}
-  m_LocalScale: {x: 0.61355317, y: 0.21106735, z: 1}
+  m_LocalPosition: {x: 0.2, y: 2.051, z: 0}
+  m_LocalScale: {x: 0.61355317, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5636160952547204764}
@@ -58,8 +58,8 @@ Transform:
   m_GameObject: {fileID: 692307482971654951}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19954076, y: 0.66095877, z: 0}
-  m_LocalScale: {x: 0.61355317, y: 0.21106735, z: 1}
+  m_LocalPosition: {x: 0.2, y: 1.617, z: 0}
+  m_LocalScale: {x: 0.61355317, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5104033184472845790}
@@ -331,7 +331,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.09939094, y: 0.45796415}
+  m_ConnectedAnchor: {x: 0.08000003, y: 1.0799999}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   - 20
   maxTorque: 300
   punchCooldown: 1
-  uppercutForce: 30
+  uppercutForce: []
   punchDist: 1.5
 --- !u!70 &5428646932644990518
 CapsuleCollider2D:
@@ -603,7 +603,8 @@ GameObject:
   - component: {fileID: 1474193979430587856}
   - component: {fileID: 635530037557724253}
   - component: {fileID: 823860612830668844}
-  - component: {fileID: 4808573204292764988}
+  - component: {fileID: 4844617490315180726}
+  - component: {fileID: 3906410523132196007}
   m_Layer: 6
   m_Name: Hammer
   m_TagString: Untagged
@@ -621,7 +622,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 1.08, y: -0.08, z: 0}
-  m_LocalScale: {x: 0.80490255, y: 2.3582628, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 875273128710849349}
@@ -707,8 +708,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &4808573204292764988
-BoxCollider2D:
+--- !u!60 &4844617490315180726
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -749,9 +750,41 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.20300475, y: 1.1363826}
+      - {x: -0.53712827, y: 0.7562376}
+      - {x: -0.82072026, y: 0.118768565}
+      - {x: -0.78016204, y: -0.11956483}
+      - {x: -0.81206024, y: -0.40125862}
+      - {x: -0.6503871, y: -0.7473583}
+      - {x: -0.13626274, y: -1.0121672}
+      - {x: 0.69092196, y: -1.2103982}
+      - {x: 0.8302288, y: -1.1022764}
+      - {x: 0.91090524, y: -0.9645598}
+      - {x: 0.92250556, y: -0.7654395}
+      - {x: 0.7827262, y: -0.6602784}
+      - {x: 0.8868077, y: -0.60533}
+      - {x: 0.9036002, y: -0.26005822}
+      - {x: 0.28562164, y: -0.11977917}
+      - {x: 0.3424365, y: 0.043252133}
+      - {x: 0.35222694, y: 0.92312694}
+  m_UseDelaunayMesh: 0
+--- !u!114 &3906410523132196007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361094071894078335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821b5a0eb98c38241814ebb0b36fb9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game_state: {fileID: 11400000, guid: c65118ecb653c0845938f412c775c80c, type: 2}
+  holding: {fileID: 0}
+  holding_timer: 0
 --- !u!1 &4394724237264255918
 GameObject:
   m_ObjectHideFlags: 0

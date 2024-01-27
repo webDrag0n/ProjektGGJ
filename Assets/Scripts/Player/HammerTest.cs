@@ -120,11 +120,14 @@ public class HammerTest : MonoBehaviour
     private void UpdateGrounded()
     {
         // Perform a raycast downwards
-        RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, raycastDistance);
+        RaycastHit2D hit = Physics2D.Raycast(character.transform.position, Vector2.down, raycastDistance, rayMask);
         if (hit.collider)
         {
             isGrounded = hit.collider.CompareTag("Ground");
+            return;
         }
+
+        isGrounded = false;
     }
     
     public float punchForce = 50f;

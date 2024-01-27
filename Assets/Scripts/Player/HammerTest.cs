@@ -29,7 +29,7 @@ public class HammerTest : MonoBehaviour
         // TODO: Optimize this
         character.centerOfMass = new Vector2(0, -1);
         
-        pid = new PID(1e-3f, -1e-3f, 1e-2f);
+        // pid = new PID(1e-3f, -1e-3f, 1e-2f);
     }
 
     void Update()
@@ -45,7 +45,8 @@ public class HammerTest : MonoBehaviour
             hammer.transform.eulerAngles) * Vector3.down).normalized;
 
         var angle = GetAngle(mouseDirection, hingeDirection);
-        SetSpeed(-Mathf.Atan(angle)*1000);
+        Debug.Log(angle);
+        SetSpeed(-Mathf.Atan(angle)*500);
         
         UpdateRotateCount();
     }
@@ -54,13 +55,16 @@ public class HammerTest : MonoBehaviour
     {
         var current = character.transform.eulerAngles.z - rotateCount * 360;
         
-        var torque = pid.Update(0, current, 0.02f);
+        // var torque = pid.Update(0, current, 0.02f);
+        var torque = current;
+            // Debug.Log(current);
         if (torque > 20f)
         {
-            Debug.Log(torque);
+            // Debug.Log(torque);
         }
         
-        character.AddTorque(torque, ForceMode2D.Impulse);
+        // character.AddTorque(torque, ForceMode2D.Impulse);
+        
         
         UpdateGrounded();
         

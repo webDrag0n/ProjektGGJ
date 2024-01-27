@@ -214,7 +214,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &58678518
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1335,6 +1335,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hammer: {fileID: 1832882309}
   character: {fileID: 58678517}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastDistance: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

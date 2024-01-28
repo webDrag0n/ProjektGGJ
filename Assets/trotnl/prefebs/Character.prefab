@@ -76,6 +76,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2830421437132196411}
   - component: {fileID: 6737352367630845956}
+  - component: {fileID: 186765429354952480}
+  - component: {fileID: 545520313180710522}
   m_Layer: 0
   m_Name: head1
   m_TagString: Untagged
@@ -150,6 +152,123 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &186765429354952480
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758713424154642977}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.3404562, y: 2.54}
+    newSize: {x: 2.3404562, y: 2.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.83656883, y: -1.1488527}
+      - {x: 1.1305324, y: -0.8793862}
+      - {x: 1.1550293, y: -0.64666504}
+      - {x: 1.1060355, y: -0.53642875}
+      - {x: 0.9835506, y: -0.40169543}
+      - {x: 1.0570415, y: -0.34045303}
+      - {x: 1.093787, y: -0.25471368}
+      - {x: 1.1182839, y: -0.16897431}
+      - {x: 1.1060355, y: -0.070986465}
+      - {x: 1.1672778, y: 0.039249863}
+      - {x: 1.1672778, y: 0.18623163}
+      - {x: 1.1427809, y: 0.271971}
+      - {x: 0.89781123, y: 0.5169406}
+      - {x: 0.87331426, y: 0.9211405}
+      - {x: 0.87331426, y: 0.9578859}
+      - {x: 0.7998234, y: 1.0803707}
+      - {x: 0.5548538, y: 1.239601}
+      - {x: 0.44461745, y: 1.2640979}
+      - {x: 0.13840544, y: 1.2640979}
+      - {x: -0.04532177, y: 1.215104}
+      - {x: -0.32703683, y: 1.1906071}
+      - {x: -0.5965034, y: 0.9701344}
+      - {x: -0.7312367, y: 0.87214655}
+      - {x: -0.8292245, y: 0.8598981}
+      - {x: -0.96395785, y: 0.7619102}
+      - {x: -1.0129517, y: 0.6516739}
+      - {x: -1.0129517, y: 0.48019516}
+      - {x: -0.95170933, y: 0.22297707}
+      - {x: -1.1599336, y: 0.11274075}
+      - {x: -1.1599336, y: 0.063746825}
+      - {x: -1.1109396, y: 0.0147529}
+      - {x: -0.92721236, y: 0.039249863}
+      - {x: -1.0129517, y: -0.2424652}
+      - {x: -1.1354365, y: -0.35270151}
+      - {x: -1.0741942, y: -0.45068938}
+      - {x: -0.8537215, y: -0.4261924}
+      - {x: -0.86596996, y: -0.4996833}
+      - {x: -0.8292245, y: -0.53642875}
+      - {x: -0.78023064, y: -0.53642875}
+      - {x: -0.74348515, y: -0.52418023}
+      - {x: -0.7679821, y: -0.58542264}
+      - {x: -0.8169761, y: -0.89163464}
+      - {x: -0.80472755, y: -0.96512556}
+      - {x: -0.7067397, y: -1.0753618}
+      - {x: -0.62100035, y: -1.1243558}
+      - {x: -0.4127762, y: -1.1243558}
+      - {x: -0.3515338, y: -1.2468406}
+      - {x: 0.11390848, y: -1.2468406}
+      - {x: 0.38337505, y: -1.2223437}
+      - {x: 0.5548538, y: -1.1611012}
+      - {x: 0.75082946, y: -1.1611012}
+    - - {x: 0.77532643, y: -0.40169543}
+      - {x: 0.7998234, y: -0.36495}
+      - {x: 0.83656883, y: -0.36495}
+      - {x: 0.84881735, y: -0.35270151}
+      - {x: 0.8243204, y: -0.38944697}
+      - {x: 0.84881735, y: -0.41394392}
+      - {x: 0.81207186, y: -0.41394392}
+      - {x: 0.81207186, y: -0.40169543}
+  m_UseDelaunayMesh: 0
+--- !u!114 &545520313180710522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758713424154642977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce943e95bb839314ab73744276b41d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headHitThreshold: 20
 --- !u!1 &1761437618469990962
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +450,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.08000003, y: 1.0799999}
+  m_ConnectedAnchor: {x: 0.080000035, y: 1.0799999}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0

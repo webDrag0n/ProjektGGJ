@@ -12,7 +12,7 @@ public class KnightEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        am = gameObject.transform.parent.GetComponent<Animator>();
+        am = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 

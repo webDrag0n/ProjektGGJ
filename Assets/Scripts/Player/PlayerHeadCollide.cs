@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerHeadCollide : MonoBehaviour
 {
-    public GameManager manager;
     
     public float headHitThreshold = 20f; // Adjust this threshold as needed
 

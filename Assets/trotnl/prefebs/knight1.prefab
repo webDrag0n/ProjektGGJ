@@ -504,7 +504,7 @@ Transform:
   m_GameObject: {fileID: 2195430189115262005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37, y: 3.334, z: 0}
+  m_LocalPosition: {x: -0.27, y: 3.334, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -642,9 +642,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.35153604, y: -0.0111946445}
+  m_Offset: {x: 0.22844046, y: -0.0111946445}
   serializedVersion: 2
-  m_Radius: 0.88323474
+  m_Radius: 0.761104
 --- !u!233 &236579050118434221
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -660,8 +660,8 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.44371462, y: -0.94353884}
-  m_ConnectedAnchor: {x: 0.5137147, y: 0.5954614}
+  m_Anchor: {x: 0.2465158, y: -0.85217786}
+  m_ConnectedAnchor: {x: 0.41651586, y: 0.6868224}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1053,7 +1053,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5894945843868290603}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1075,7 +1075,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.22229126, y: 1.0787363}
@@ -1106,8 +1106,8 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: -0.24246034, y: 0.0004959336}
-  m_ConnectedAnchor: {x: 0.5586843, y: 0.46310407}
+  m_Anchor: {x: -0.23910037, y: 0.08249856}
+  m_ConnectedAnchor: {x: 0.60644597, y: 0.5300384}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1729,8 +1729,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028828282, y: 2.3335166}
-  m_Size: {x: 0.7652193, y: 4.0112805}
+  m_Offset: {x: 0.02152881, y: 2.3335166}
+  m_Size: {x: 1.7164122, y: 4.0112805}
   m_Direction: 0
 --- !u!50 &887591077814188957
 Rigidbody2D:

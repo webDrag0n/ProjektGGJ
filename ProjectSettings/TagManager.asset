@@ -10,6 +10,7 @@ TagManager:
   - Ground
   - Box
   - Rock
+  - Sword
   layers:
   - Default
   - TransparentFX

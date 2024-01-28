@@ -1,42 +1,64 @@
 fileFormatVersion: 2
 guid: d9227c81bad0c844f83c798cfc2abb07
-TextureImporter:
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
-  mipmaps:
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
     mipMapMode: 0
-    enableMipMap: 0
-    sRGBTexture: 1
-    linearTexture: 0
+    enableMipMap: 1
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
-  bumpmap:
     convertToNormalMap: 0
-    externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMipmapLimit: 0
-  grayScaleToAlpha: 0
-  generateCubemap: 6
-  cubemapConvolution: 0
-  seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
-  textureSettings:
-    serializedVersion: 2
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     wrapU: 1
     wrapV: 1
@@ -115,9 +137,45 @@ TextureImporter:
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
+=======
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+>>>>>>> Stashed changes
     vertices: []
+    spritePhysicsOutline: []
     indices: 
     edges: []
+<<<<<<< Updated upstream
     weights: []
     secondaryTextures: []
     nameFileIdTable: {}
@@ -163,6 +221,8 @@ TextureImporter:
     spritePhysicsOutline: []
     indices: 
     edges: []
+=======
+>>>>>>> Stashed changes
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
@@ -179,6 +239,7 @@ TextureImporter:
       y: 4
       width: 137
       height: 286
+<<<<<<< Updated upstream
     spriteID: 977106926139fae4c88902cc120c42a7
     spriteBone:
     - name: bone_7
@@ -195,6 +256,15 @@ TextureImporter:
     - position: {x: 96, y: 1}
       boneWeight:
         weight0: 1
+=======
+    spriteID: b6a6eed30b98aa5408bd741748be9169
+    spriteBone: []
+    spriteOutline: []
+    vertices:
+    - position: {x: 93.983, y: 2.1589966}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -202,9 +272,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 122.43, y: 6.345993}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 114.498, y: 4.5}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -212,9 +288,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 128.445, y: 17.036003}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 126.562, y: 12.692993}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -222,9 +304,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 126.912, y: 42.707}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 126.089, y: 41.824997}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -232,9 +320,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 127.164, y: 70.528}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 125.693, y: 72.704}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -242,9 +336,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 128.216, y: 99.145996}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 127.264, y: 102.264}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -252,9 +352,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 129.821, y: 126.55}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 129.036, y: 132.212}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -262,9 +368,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 131.088, y: 155.163}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 130.794, y: 161.77}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -272,9 +384,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 132.54001, y: 183.562}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 131.962, y: 191.72299}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -282,9 +400,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 133.93, y: 212.009}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 132.9, y: 220.859}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -292,9 +416,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 135.231, y: 240.619}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 134.031, y: 250.234}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -302,9 +432,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 136.755, y: 263.855}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 135.882, y: 260.23102}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -312,9 +448,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 137, y: 275}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 135.019, y: 274.539}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -322,9 +464,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 114.076, y: 285}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 104.082, y: 285.917}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -332,9 +480,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 82.451004, y: 285.753}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 74.301, y: 284.951}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -342,9 +496,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 73.671, y: 285.50702}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 60.97, y: 267}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -352,9 +512,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 57.976, y: 268}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 31.009, y: 267.627}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -362,9 +528,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 29.37, y: 268.5}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 11.311001, y: 267.153}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -372,9 +544,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 9.834, y: 266.583}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 8.485001, y: 237.733}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -382,9 +560,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 7.931, y: 233.9}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 7.069, y: 207.80301}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -392,9 +576,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 6.2089996, y: 205.673}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 6.008999, y: 177.844}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -402,9 +592,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 5.0769997, y: 177.039}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 5.014, y: 147.881}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -412,9 +608,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 4.231003, y: 148.427}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 4.1569977, y: 118.747}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -422,9 +624,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 4.116997, y: 120.22}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 3.7099993, y: 95.055}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -432,9 +640,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 3.9390032, y: 95.966995}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 2.2089996, y: 65.255}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -442,9 +656,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 1.1119995, y: 68.58}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 1.413002, y: 35.302002}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -452,9 +672,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.24700166, y: 39.957}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 1.8830034, y: 8.119995}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -462,9 +688,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.34700012, y: 10.949997}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 10.2560005, y: 3.3789976}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -472,9 +704,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.9530029, y: 6.4069977}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 51.697998, y: 1.449997}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -482,6 +720,7 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 12.787998, y: 2.2859955}
       boneWeight:
         weight0: 1
@@ -545,6 +784,11 @@ TextureImporter:
     - position: {x: 73.88549, y: 218.23448}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 82.048004, y: 1.3589935}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -553,10 +797,17 @@ TextureImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
+<<<<<<< Updated upstream
     indices: 00000000020000000100000010000000230000001300000011000000130000001200000013000000230000001400000014000000220000001500000014000000230000002200000015000000220000001600000016000000210000001700000016000000220000002100000017000000210000001800000018000000200000001900000018000000210000002000000019000000200000001a0000001a0000001d0000001b0000001a0000001e0000001d0000001a000000200000001e0000001000000013000000110000000e00000023000000100000000e000000100000000f0000000b0000000d0000000c000000000000000300000002000000000000002000000003000000000000001f000000200000000300000020000000040000000400000021000000050000000400000020000000210000000500000021000000060000001b0000001d0000001c00000006000000220000000700000007000000220000000800000008000000230000000900000008000000220000002300000009000000230000000a0000000a0000000d0000000b0000000a0000000e0000000d0000000a000000230000000e0000000600000021000000220000001e000000200000001f000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 31}
+=======
+    indices: 000000000300000001000000000000001d00000003000000010000000300000002000000030000001d00000004000000040000001700000005000000040000001800000017000000040000001c00000018000000040000001d0000001c000000050000001600000006000000050000001700000016000000060000001500000007000000060000001600000015000000070000001400000008000000070000001500000014000000080000000f0000000900000008000000130000000f000000080000001400000013000000090000000f0000000a0000000a0000000d0000000b0000000a0000000f0000000d0000000b0000000d0000000c0000000d0000000f0000000e0000000f00000012000000100000000f0000001300000012000000100000001200000011000000180000001c00000019000000190000001b0000001a000000190000001c0000001b000000
+    edges:
+    - {x: 0, y: 1}
+    - {x: 0, y: 29}
+>>>>>>> Stashed changes
     - {x: 1, y: 2}
     - {x: 2, y: 3}
     - {x: 3, y: 4}
@@ -585,8 +836,11 @@ TextureImporter:
     - {x: 26, y: 27}
     - {x: 27, y: 28}
     - {x: 28, y: 29}
+<<<<<<< Updated upstream
     - {x: 29, y: 30}
     - {x: 30, y: 31}
+=======
+>>>>>>> Stashed changes
     tessellationDetail: 0
     uvTransform: {x: 36, y: -78}
     spritePosition: {x: 209, y: 82}
@@ -601,6 +855,7 @@ TextureImporter:
       y: 4
       width: 233
       height: 294
+<<<<<<< Updated upstream
     spriteID: 500a25b24396c504ca9b01b61e56e250
     spriteBone:
     - name: bone_2
@@ -617,6 +872,15 @@ TextureImporter:
     - position: {x: 117.95, y: 1.4309998}
       boneWeight:
         weight0: 1
+=======
+    spriteID: 92e71c33487c0c148a05b3b11a07779d
+    spriteBone: []
+    spriteOutline: []
+    vertices:
+    - position: {x: 105.973, y: 1.4019928}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -624,9 +888,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 148.784, y: 4.923996}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 133.861, y: 4.5399933}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -634,9 +904,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 176.431, y: 2.4329987}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 166.45, y: 5.3589935}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -644,9 +920,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 199.30899, y: 6.3119965}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 177.502, y: 3.498993}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -654,9 +936,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 213.526, y: 16.315994}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 201.13501, y: 7.486999}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -664,9 +952,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 216, y: 52.88}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 214, y: 20.052002}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -674,9 +968,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 213.619, y: 86.28}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 214.311, y: 55.683}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -684,9 +984,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 210.003, y: 118.646}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 212.252, y: 90.682}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -694,9 +1000,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 204.874, y: 150.976}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 208, y: 123.456}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -704,9 +1016,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 208, y: 181.25}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 203.68399, y: 156.52}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -714,9 +1032,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 206.032, y: 209.054}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 208, y: 188.442}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -724,9 +1048,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 186.922, y: 242.762}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 201.10901, y: 218.559}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -734,9 +1064,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 172.91699, y: 272.281}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 181.349, y: 250.028}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -744,9 +1080,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 168.229, y: 293.768}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 168.465, y: 282.294}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -754,9 +1096,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 156.409, y: 286.673}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 165.806, y: 291.92102}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -764,9 +1112,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 152.967, y: 266.572}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 154.847, y: 278.10602}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -774,9 +1128,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 157.962, y: 244.899}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 155, y: 255.379}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -784,9 +1144,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 173, y: 211.093}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 167.095, y: 222.956}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -794,9 +1160,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 158.755, y: 202.12201}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 170.159, y: 194.65201}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -804,9 +1176,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 138.70801, y: 209.263}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 150.861, y: 202.951}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -814,9 +1192,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 110.106, y: 225.619}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 131.649, y: 212.067}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -824,9 +1208,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 99.647, y: 226.646}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 102.874, y: 228}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -834,9 +1224,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 102.825, y: 205.669}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 100.219, y: 220.141}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -844,9 +1240,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 74.216, y: 219}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 95.194, y: 209.806}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -854,9 +1256,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 71.382, y: 214.05}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 74.611, y: 217.609}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -864,9 +1272,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 58.602, y: 200.914}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 63.343, y: 198.827}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -874,9 +1288,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 41.620003, y: 202.894}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 42.726997, y: 202.044}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -884,9 +1304,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 40.026, y: 198.587}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 41.612, y: 197.41699}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -894,9 +1320,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 40.434, y: 219.258}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 41.542, y: 214.152}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -904,9 +1336,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 56, y: 249.099}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 52.626, y: 246.822}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -914,9 +1352,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 60, y: 274.45502}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 60, y: 268.654}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -924,9 +1368,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 49.072998, y: 294}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 52.39, y: 289.61}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -934,9 +1384,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 43.865997, y: 293.865}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 44.814003, y: 292.811}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -944,9 +1400,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 34.531998, y: 261.763}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 34.406998, y: 259.406}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -954,9 +1416,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 18.265999, y: 233.025}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 16.987, y: 229.561}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -964,9 +1432,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 1.842003, y: 204.68}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 1, y: 198.881}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -974,9 +1448,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.788002, y: 184.867}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 2.9349976, y: 170.327}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -984,9 +1464,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 1.9810027, y: 170.103}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 18.137001, y: 149.543}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -994,9 +1480,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 17.647003, y: 149.301}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 28.621002, y: 123.689}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1004,9 +1496,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 27.830004, y: 124.805}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 26.735, y: 91.225}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1014,9 +1512,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 26.171997, y: 93.341}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 25.265999, y: 56.339}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1024,9 +1528,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 23.828003, y: 60.339}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 27.539, y: 21.389}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1034,9 +1544,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 25.935997, y: 27.128998}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 45.579002, y: 9.466995}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1044,6 +1560,7 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 33.717003, y: 13.2859955}
       boneWeight:
         weight0: 1
@@ -1077,6 +1594,11 @@ TextureImporter:
     - position: {x: 118.20579, y: 102.80704}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 80.054, y: 1.3699951}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1085,10 +1607,17 @@ TextureImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
+<<<<<<< Updated upstream
     indices: 000000002e00000001000000160000002e00000019000000190000001b0000001a00000019000000260000001b000000190000002700000026000000190000002e000000270000001b000000230000001c0000001b00000024000000230000001b00000025000000240000001b00000026000000250000001c000000220000001d0000001c00000023000000220000001d000000210000001e0000001d00000022000000210000001e000000200000001f0000001e0000002100000020000000270000002e00000028000000280000002e00000029000000290000002c0000002a000000290000002e0000002c000000160000001900000018000000160000001800000017000000140000001600000015000000130000002e00000016000000000000002d0000002e000000010000000500000002000000010000002e00000005000000020000000500000003000000030000000500000004000000050000002e00000006000000060000002e00000007000000070000002e000000080000000800000012000000090000002a0000002c0000002b000000080000002e000000120000000900000012000000110000000a000000110000000b0000000b000000100000000c0000000b00000011000000100000000c0000000e0000000d0000000c0000000f0000000e0000000c000000100000000f000000120000002e0000001300000013000000160000001400000009000000110000000a0000002c0000002e0000002d000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 45}
+=======
+    indices: 000000002700000001000000000000002800000027000000000000002b0000002800000001000000070000000200000001000000080000000700000001000000270000000800000002000000060000000300000002000000070000000600000003000000050000000400000003000000060000000500000008000000120000000900000008000000130000001200000008000000260000001300000008000000270000002600000009000000120000000a0000000a000000120000000b0000000b000000110000000c0000000b00000012000000110000000c000000100000000d0000000c00000011000000100000000d0000000f0000000e0000000d000000100000000f000000130000001700000014000000130000002600000017000000140000001600000015000000140000001700000016000000170000001900000018000000170000002600000019000000190000001b0000001a00000019000000250000001b0000001900000026000000250000001b000000230000001c0000001b00000024000000230000001b00000025000000240000001c000000220000001d0000001c00000023000000220000001d000000210000001e0000001d00000022000000210000001e000000210000001f0000001f0000002100000020000000280000002a00000029000000280000002b0000002a000000
+    edges:
+    - {x: 0, y: 1}
+    - {x: 0, y: 43}
+>>>>>>> Stashed changes
     - {x: 1, y: 2}
     - {x: 2, y: 3}
     - {x: 3, y: 4}
@@ -1131,8 +1660,11 @@ TextureImporter:
     - {x: 40, y: 41}
     - {x: 41, y: 42}
     - {x: 42, y: 43}
+<<<<<<< Updated upstream
     - {x: 43, y: 44}
     - {x: 44, y: 45}
+=======
+>>>>>>> Stashed changes
     tessellationDetail: 0
     uvTransform: {x: -48, y: -271}
     spritePosition: {x: 52, y: 275}
@@ -1147,6 +1679,7 @@ TextureImporter:
       y: 298
       width: 114
       height: 71
+<<<<<<< Updated upstream
     spriteID: 75d138ee142fa194b8c81bf7b2933a8e
     spriteBone:
     - name: bone_6
@@ -1163,6 +1696,15 @@ TextureImporter:
     - position: {x: 95.901, y: 5.3099995}
       boneWeight:
         weight0: 1
+=======
+    spriteID: ac6042f0480d2794684bf935b1bfb93f
+    spriteBone: []
+    spriteOutline: []
+    vertices:
+    - position: {x: 102, y: 8}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1170,9 +1712,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 106.827, y: 9.858}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 108.581, y: 17.428}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1180,9 +1728,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 110.379, y: 21.411999}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 111.648, y: 29.426}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1190,9 +1744,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 112.751, y: 33.267}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 113.271, y: 41.558}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1200,9 +1760,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 113.634, y: 45.432}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 112.685, y: 54.285}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1210,9 +1776,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 111.134, y: 56.864}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 103.752, y: 57.065}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1220,9 +1792,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 104.541, y: 58.197}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 91.076996, y: 58.313}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1230,9 +1808,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 92.484, y: 58.968}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 90.817, y: 68.744995}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1240,9 +1824,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 91.863, y: 70.134}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 77.774, y: 70.334}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1250,9 +1840,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 79.756, y: 70.035995}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 66.770004, y: 64.423004}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1260,9 +1856,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 68.185, y: 67.184}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 57.048, y: 56.583}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1270,9 +1872,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 58.835, y: 59.211}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 46.627, y: 49.423}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1280,9 +1888,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 49.447, y: 51.397}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 35.48, y: 43.105}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1290,9 +1904,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 38.941, y: 45.494}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 23.859001, y: 39.051}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1300,9 +1920,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 27.667, y: 41.046}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 12.2560005, y: 35.003}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1310,9 +1936,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 16.125, y: 37.292}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 2.0839996, y: 28.098}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1320,9 +1952,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 5.299, y: 33.3}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 2.4720001, y: 15.521}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1330,9 +1968,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 1.3899994, y: 21.946999}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 7.778, y: 7.889}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1340,9 +1984,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.23199844, y: 15.441}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 22.159, y: 8.473}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1350,9 +2000,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.0909996, y: 10.910999}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 34.559998, y: 10.598}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1360,9 +2016,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 12.412998, y: 7.5}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 46.586998, y: 14.709998}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1370,9 +2032,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 24.208, y: 7.889}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 56.505, y: 18}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1380,9 +2048,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 35.705, y: 10.539}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 67.394, y: 11.476999}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1390,9 +2064,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 47.341, y: 14.024}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 79.34, y: 7.542}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1400,6 +2080,7 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 57.842, y: 14.129998}
       boneWeight:
         weight0: 1
@@ -1513,6 +2194,11 @@ TextureImporter:
     - position: {x: 76.3856, y: 45.97033}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 91.347, y: 6.101}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1521,10 +2207,17 @@ TextureImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
+<<<<<<< Updated upstream
     indices: 0000000021000000010000000e00000017000000160000000f00000011000000100000000f00000014000000110000000f00000015000000140000000f00000016000000150000001100000014000000120000000e000000160000000f00000012000000140000001300000018000000220000001900000019000000210000001a0000001900000022000000210000001a000000210000001b0000001c0000001e0000001d0000001c000000200000001e0000001700000022000000180000001e000000200000001f0000000d00000022000000170000000c000000220000000d000000000000001b000000210000000100000021000000020000000200000021000000030000000300000021000000040000000400000006000000050000000400000007000000060000000d000000170000000e00000004000000210000000700000007000000230000000900000007000000210000002300000009000000230000000a0000000a000000230000000b0000000b000000220000000c0000000b0000002300000022000000070000000900000008000000210000002200000023000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 27}
+=======
+    indices: 000000001800000001000000010000001800000002000000020000000600000003000000020000001700000006000000020000001800000017000000030000000500000004000000030000000600000005000000060000000800000007000000060000000900000008000000060000000a0000000900000006000000150000000a0000000600000016000000150000000600000017000000160000000a000000150000000b0000000b000000150000000c0000000c000000130000000d0000000c00000014000000130000000c00000015000000140000000d000000120000000e0000000d00000013000000120000000e000000100000000f0000000e0000001200000010000000100000001200000011000000
+    edges:
+    - {x: 0, y: 1}
+    - {x: 0, y: 24}
+>>>>>>> Stashed changes
     - {x: 1, y: 2}
     - {x: 2, y: 3}
     - {x: 3, y: 4}
@@ -1548,6 +2241,7 @@ TextureImporter:
     - {x: 21, y: 22}
     - {x: 22, y: 23}
     - {x: 23, y: 24}
+<<<<<<< Updated upstream
     - {x: 24, y: 25}
     - {x: 25, y: 26}
     - {x: 26, y: 27}
@@ -1556,6 +2250,8 @@ TextureImporter:
     - {x: 29, y: 30}
     - {x: 30, y: 31}
     - {x: 31, y: 32}
+=======
+>>>>>>> Stashed changes
     tessellationDetail: 0
     uvTransform: {x: 68, y: 127}
     spritePosition: {x: 177, y: 171}
@@ -1570,6 +2266,7 @@ TextureImporter:
       y: 306
       width: 98
       height: 92
+<<<<<<< Updated upstream
     spriteID: 1e4245a5d34fcab4fa40f39ad6e0e97c
     spriteBone:
     - name: bone_5
@@ -1586,6 +2283,15 @@ TextureImporter:
     - position: {x: 90.944, y: 0.48199844}
       boneWeight:
         weight0: 1
+=======
+    spriteID: 57bd52f2de4f01947825b706aa1e1429
+    spriteBone: []
+    spriteOutline: []
+    vertices:
+    - position: {x: 92, y: 1}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1593,9 +2299,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 93, y: 1}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 97.555, y: 11.8619995}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1603,9 +2315,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 97.638, y: 11.575001}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 93.694, y: 23.045}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1613,9 +2331,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 94.666, y: 22.633}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 85.465, y: 31.985}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1623,9 +2347,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 87.270004, y: 31.363}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 76.097, y: 40.592}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1633,9 +2363,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 78.665, y: 40.128}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 67.020004, y: 49.905}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1643,9 +2379,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 71.486, y: 49.733}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 69.579, y: 59.263}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1653,9 +2395,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 71.08, y: 58.529}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 74.03, y: 70.315}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1663,9 +2411,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 75.159, y: 69.695}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 74.971, y: 81.027}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1673,9 +2427,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 76.906, y: 81.091995}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 63.09, y: 84.683}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1683,9 +2443,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 66.159, y: 84.463}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 51.059, y: 88.471}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1693,9 +2459,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 54.557, y: 88.716995}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 38.619, y: 90.655}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1703,9 +2475,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 42.555, y: 91.324005}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 26.174, y: 90.346}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1713,9 +2491,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 30.053, y: 91.632996}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 14.570998, y: 87.622}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1723,9 +2507,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 17.931, y: 90.520004}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 6.366001, y: 78.770004}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1733,9 +2523,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 8.354, y: 83.984}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 2.202999, y: 67.225}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1743,9 +2539,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 2.8759995, y: 73.148}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 0.6310005, y: 54.975}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1753,9 +2555,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.4379997, y: 61.362}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 1.2869987, y: 42.422}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1763,9 +2571,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.15999985, y: 48.809}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 2.9430008, y: 30.193}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1773,9 +2587,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.48500058, y: 39.304}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 4.2869987, y: 19.715}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1783,9 +2603,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 2.3409996, y: 24.151}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 16.662998, y: 22.796}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1793,9 +2619,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 3.778, y: 18.225}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 28.927, y: 26.416}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1803,9 +2635,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 15.484001, y: 21.32}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 39.733, y: 28.269}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1813,9 +2651,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 27.459, y: 24.931}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 49.138, y: 19.289}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1823,9 +2667,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 38.475998, y: 27.526}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 59.062, y: 11.294998}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1833,9 +2683,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 47.614, y: 18.883}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 69.770996, y: 4.4869995}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1843,6 +2699,7 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 57.116, y: 11.411999}
       boneWeight:
         weight0: 1
@@ -1896,6 +2753,11 @@ TextureImporter:
     - position: {x: 24.563717, y: 54.020435}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 81.282, y: 0.46799847}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1904,10 +2766,17 @@ TextureImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
+<<<<<<< Updated upstream
     indices: 000000000200000001000000180000001f0000001e000000180000001e00000019000000170000001f00000018000000140000001600000015000000130000001f00000017000000130000001700000016000000130000001600000014000000120000001f00000013000000110000001f00000012000000100000001f000000110000000f0000001f000000100000000e0000001d0000001f0000000e0000001f0000000f0000000d0000001d0000000e000000190000001e0000001a0000000c0000001d0000000d0000000a0000001d0000000b000000080000001d0000000a000000080000000a00000009000000070000001e0000001d000000070000001d00000008000000060000001e00000007000000050000001a0000001e000000050000001e00000006000000040000001c0000001b000000040000001b0000001a000000040000001a00000005000000030000001c00000004000000020000001c00000003000000000000001c000000020000000b0000001d0000000c0000001d0000001e0000001f000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 28}
+=======
+    indices: 000000001a00000001000000010000001a00000002000000020000001900000003000000020000001a00000019000000030000001800000004000000030000001900000018000000040000001700000005000000040000001800000017000000050000000a00000006000000050000000b0000000a00000005000000160000000b000000050000001700000016000000060000000900000007000000060000000a000000090000000700000009000000080000000b000000160000000c0000000c0000000e0000000d0000000c0000000f0000000e0000000c000000160000000f0000000f0000001600000010000000100000001500000011000000100000001600000015000000110000001400000012000000110000001500000014000000120000001400000013000000
+    edges:
+    - {x: 0, y: 1}
+    - {x: 0, y: 26}
+>>>>>>> Stashed changes
     - {x: 1, y: 2}
     - {x: 2, y: 3}
     - {x: 3, y: 4}
@@ -1933,8 +2802,11 @@ TextureImporter:
     - {x: 23, y: 24}
     - {x: 24, y: 25}
     - {x: 25, y: 26}
+<<<<<<< Updated upstream
     - {x: 26, y: 27}
     - {x: 27, y: 28}
+=======
+>>>>>>> Stashed changes
     tessellationDetail: 0
     uvTransform: {x: 36, y: 126}
     spritePosition: {x: 103, y: 180}
@@ -1949,6 +2821,7 @@ TextureImporter:
       y: 306
       width: 127
       height: 155
+<<<<<<< Updated upstream
     spriteID: c0af7df7fb87d7b4486d9760c5997bb9
     spriteBone:
     - name: bone_1
@@ -1965,6 +2838,15 @@ TextureImporter:
     - position: {x: 109.206, y: 2.447998}
       boneWeight:
         weight0: 1
+=======
+    spriteID: 2fdf2e3e56d24694099fe4cb3249de71
+    spriteBone: []
+    spriteOutline: []
+    vertices:
+    - position: {x: 110, y: 4}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1972,9 +2854,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 110, y: 3}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 104.117004, y: 21.655998}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1982,9 +2870,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 105.159, y: 20.220001}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 100.741, y: 37.091}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -1992,9 +2886,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 100.627, y: 34.839}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 111.111, y: 52.661}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2002,9 +2902,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 110.409, y: 50.268997}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 118.743, y: 70.12}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2012,9 +2918,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 118.43, y: 66.66}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 125.022, y: 87.741}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2022,9 +2934,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 125.138, y: 83.462}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 125.085, y: 105.799}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2032,9 +2950,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 127, y: 101.377}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 120.229, y: 122.56}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2042,9 +2966,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 122.187, y: 118.244}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 106.363, y: 136.439}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2052,9 +2982,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 111.124, y: 132.148}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 96.242004, y: 148.913}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2062,9 +2998,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 97, y: 142.176}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 92.215, y: 155}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2072,9 +3014,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 94.892, y: 155}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 71.477, y: 147.54001}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2082,9 +3030,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 86.722, y: 154.077}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 55.985, y: 140.668}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2092,9 +3046,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 69.44, y: 148.206}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 40.855, y: 134.115}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2102,9 +3062,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 55.428, y: 141.556}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 29.591, y: 118.041}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2112,9 +3078,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 40.524002, y: 134.176}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 24.345001, y: 99.542}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2122,9 +3094,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 29.214, y: 119.028}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 22.084, y: 80.946}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2132,9 +3110,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 24.293999, y: 102.173004}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 19.632, y: 62.424}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2142,9 +3126,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 21.362, y: 84.547}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 12.804001, y: 47.107002}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2152,9 +3142,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 19.210999, y: 66.613}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 0, y: 33.808}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2162,9 +3158,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 13.971, y: 50.386}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 12.908001, y: 21.862}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2172,9 +3174,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 2.8260002, y: 37.763}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 28.477, y: 17.439}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2182,9 +3190,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0, y: 33.828}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 46.354, y: 12.853996}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2192,9 +3206,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.94699866, y: 27.581}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 62.298, y: 8.472}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2202,9 +3222,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 18.272, y: 19.285}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 77.637, y: 5.4140015}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2212,9 +3238,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 34.511, y: 14.216998}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 95.604996, y: 0.86499786}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2222,6 +3254,7 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 50.874, y: 10.050003}
       boneWeight:
         weight0: 1
@@ -2295,6 +3328,11 @@ TextureImporter:
     - position: {x: 54.449177, y: 87.80712}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 106.464, y: 0.46499634}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2303,10 +3341,17 @@ TextureImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
+<<<<<<< Updated upstream
     indices: 0000000002000000010000000f00000021000000100000000f0000001f00000021000000100000002100000011000000110000002100000012000000120000002100000013000000130000001e000000140000000e0000001f0000000f00000013000000210000001e000000140000001900000018000000140000001e00000019000000150000001700000016000000150000001800000017000000190000001e0000001a0000001a0000001e0000001b0000001400000018000000150000000d0000001f0000000e0000000a0000001f0000000d0000000a0000000d0000000c000000000000001d00000002000000020000001c00000003000000020000001d0000001c000000030000002000000004000000030000001c0000001b000000030000001b0000001e000000030000001e00000020000000040000002000000005000000050000002000000006000000060000001f0000000700000006000000200000001f000000070000001f00000008000000080000001f00000009000000090000001f0000000a0000000a0000000c0000000b0000001e00000021000000200000001f0000002000000021000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 29}
+=======
+    indices: 000000001900000001000000000000001a00000019000000010000001800000002000000010000001900000018000000020000001000000003000000020000001100000010000000020000001600000011000000020000001700000016000000020000001800000017000000030000001000000004000000040000000c00000005000000040000000f0000000c00000004000000100000000f000000050000000c00000006000000060000000800000007000000060000000c00000008000000080000000b00000009000000080000000c0000000b000000090000000b0000000a0000000c0000000e0000000d0000000c0000000f0000000e000000110000001500000012000000110000001600000015000000120000001400000013000000120000001500000014000000
+    edges:
+    - {x: 0, y: 1}
+    - {x: 0, y: 26}
+>>>>>>> Stashed changes
     - {x: 1, y: 2}
     - {x: 2, y: 3}
     - {x: 3, y: 4}
@@ -2332,9 +3377,12 @@ TextureImporter:
     - {x: 23, y: 24}
     - {x: 24, y: 25}
     - {x: 25, y: 26}
+<<<<<<< Updated upstream
     - {x: 26, y: 27}
     - {x: 27, y: 28}
     - {x: 28, y: 29}
+=======
+>>>>>>> Stashed changes
     tessellationDetail: 0
     uvTransform: {x: -92, y: 174}
     spritePosition: {x: 96, y: 132}
@@ -2349,6 +3397,7 @@ TextureImporter:
       y: 377
       width: 67
       height: 100
+<<<<<<< Updated upstream
     spriteID: 242aa0f074586d8418f4edbcedd6035e
     spriteBone:
     - name: bone_3
@@ -2365,6 +3414,15 @@ TextureImporter:
     - position: {x: 55.808, y: 0.02999878}
       boneWeight:
         weight0: 1
+=======
+    spriteID: fa86e219dc0cfa946bfe2fed99083293
+    spriteBone: []
+    spriteOutline: []
+    vertices:
+    - position: {x: 66.291, y: 0.29299927}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2372,9 +3430,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 67, y: 0.14199829}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 66.731, y: 1.0970001}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2382,9 +3446,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 67, y: 11.477001}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 66.962006, y: 12.687}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2392,9 +3462,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 67, y: 22.81}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 67, y: 24.372}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2402,9 +3478,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 67, y: 27}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 59.101, y: 30.271}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2412,9 +3494,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 57.166, y: 29.962}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 48.078, y: 30.313}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2422,9 +3510,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 46.404, y: 30}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 40, y: 30.782}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2432,9 +3526,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 42.777, y: 35.78}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 42.739, y: 41.636}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2442,9 +3542,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 45.326, y: 46.562}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 44.335, y: 52.469}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2452,9 +3558,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 45.670998, y: 57.137}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 43.817, y: 63.689}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2462,9 +3574,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 44.664, y: 68.016}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 42.409, y: 74.916}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2472,9 +3590,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 42.628, y: 78.41}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 40.139, y: 86.054}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2482,9 +3606,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 40.466, y: 89.332}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 36.358, y: 90.515}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2492,9 +3622,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 34.075, y: 91.505005}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 25.247, y: 93.618}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2502,9 +3638,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 23.293999, y: 94.534}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 17.917, y: 97.270996}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2512,9 +3654,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 16.437, y: 100}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 11.698999, y: 100}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2522,9 +3670,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 6.659001, y: 98.657}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 5, y: 93.721}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2532,9 +3686,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 5.882, y: 90.851}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 7.43, y: 81.902}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2542,9 +3702,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 7.8969994, y: 77.378}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 9.826, y: 71.017}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2552,9 +3718,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 9.48, y: 66.649}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 11.542, y: 60.166}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2562,9 +3734,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 10.872999, y: 56.257}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 11.23, y: 49.106}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2572,9 +3750,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 9.59, y: 45.97}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 8.389, y: 38.093002}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2582,9 +3766,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 6.739, y: 35.318}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 5.1289997, y: 27.618}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2592,9 +3782,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 3.8999996, y: 24.661}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 2.2679996, y: 16.798}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2602,9 +3798,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.9399986, y: 14.567001}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 0.20000076, y: 5.702999}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2612,9 +3814,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.4449997, y: 3.667}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 9.969, y: 1.466999}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2622,9 +3830,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 7.986999, y: 1.4729996}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 21.549, y: 1.0699997}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2632,9 +3846,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 21.821999, y: 0.25299835}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 33.225, y: 0.82099915}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2642,9 +3862,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 33.144, y: 0.034999847}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 44.508, y: 0.18999863}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2652,6 +3878,7 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 44.475, y: 0.0069999695}
       boneWeight:
         weight0: 1
@@ -2705,6 +3932,11 @@ TextureImporter:
     - position: {x: 25.614986, y: 74.24198}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 56.186, y: 0.0909996}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2713,7 +3945,11 @@ TextureImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
+<<<<<<< Updated upstream
     indices: 0000000002000000010000000e00000022000000120000000f0000001100000010000000120000002200000013000000130000002100000014000000130000002200000021000000140000002100000015000000150000002000000016000000150000002100000020000000160000001e0000001700000016000000200000001e000000170000001e00000018000000180000001a00000019000000180000001e0000001a0000001a0000001e0000001b0000001b0000001e0000001c0000000e00000012000000110000000e000000110000000f0000000d000000220000000e0000000b000000220000000d000000000000001f00000002000000000000001d0000001f000000020000001f00000003000000030000000500000004000000030000001f00000005000000050000001f000000060000000600000020000000070000001c0000001f0000001d000000060000001f0000001e00000007000000200000000800000008000000210000000900000008000000200000002100000009000000210000000a0000000a000000220000000b0000000a00000021000000220000000b0000000d0000000c000000060000001e000000200000001c0000001e0000001f000000
+=======
+    indices: 000000001d00000001000000010000001d00000002000000020000000400000003000000020000000500000004000000020000001d00000005000000050000001c00000006000000050000001d0000001c000000060000001400000007000000060000001500000014000000060000001600000015000000060000001a00000016000000060000001b0000001a000000060000001c0000001b00000007000000140000000800000008000000130000000900000008000000140000001300000009000000130000000a0000000a0000000d0000000b0000000a000000120000000d0000000a00000013000000120000000b0000000d0000000c0000000d000000110000000e0000000d00000012000000110000000e000000100000000f0000000e0000001100000010000000160000001a00000017000000170000001900000018000000170000001a00000019000000
+>>>>>>> Stashed changes
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 29}
@@ -2759,6 +3995,7 @@ TextureImporter:
       y: 406
       width: 68
       height: 99
+<<<<<<< Updated upstream
     spriteID: 5ae32dde61d75b04495e00c4923ec290
     spriteBone:
     - name: bone_4
@@ -2775,6 +4012,15 @@ TextureImporter:
     - position: {x: 68, y: 1.0239983}
       boneWeight:
         weight0: 1
+=======
+    spriteID: 4038b6ac805f9de46bae910f0d59c4b4
+    spriteBone: []
+    spriteOutline: []
+    vertices:
+    - position: {x: 59.809, y: 0.5279999}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2782,9 +4028,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 68, y: 15.334}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 67, y: 2}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2792,9 +4044,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 68, y: 26}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 67.709, y: 13.255002}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2802,9 +4060,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 59.582, y: 31.043}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 67.595, y: 24.81}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2812,9 +4076,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 49.003, y: 31.458}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 59.305, y: 31}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2822,9 +4092,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 41.519, y: 32.781}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 48.114, y: 30.65}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2832,9 +4108,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 44.409, y: 42.968}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 40.964, y: 31.966}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2842,9 +4124,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 45.68, y: 53.642}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 42.93, y: 42.795}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2852,9 +4140,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 44.862, y: 63.935}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 44.366, y: 53.642}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2862,9 +4156,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 43.215, y: 74.770004}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 43.854, y: 64.845}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2872,9 +4172,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 40.683, y: 85.287}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 42.484, y: 75.989}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2882,9 +4188,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 35.35, y: 89.104996}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 39.836998, y: 86.548004}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2892,9 +4204,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 24.277, y: 91.466995}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 36.078, y: 87.506}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2902,9 +4220,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 17.05, y: 95.048004}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 24.768, y: 89.826996}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2912,9 +4236,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 10.028999, y: 96.507996}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 16.595, y: 93.34}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2922,9 +4252,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 5.5340004, y: 97.532}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 9.2439995, y: 94.595}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2932,9 +4268,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 4.452999, y: 92.891}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 6, y: 90.972}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2942,9 +4284,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 6.924999, y: 81.416}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 8.08, y: 78.155}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2952,9 +4300,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 8.941, y: 70.94}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 10.146, y: 66.989}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2962,9 +4316,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 10.476, y: 60.432}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 11.955, y: 56.151}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2972,9 +4332,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 10.146, y: 50.083}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 10.473, y: 45.483}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2982,9 +4348,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 7.872, y: 39.614998}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 7.122999, y: 34.954002}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -2992,9 +4364,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 4.997999, y: 29.159}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 4.066, y: 24.557}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -3002,9 +4380,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 2.1590004, y: 18.696}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 1.3959999, y: 13.744}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -3012,9 +4396,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.43299863, y: 9.856998}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 1.4129982, y: 4.8709984}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -3022,9 +4412,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 0.35499954, y: 3.787998}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 14.129, y: 2.5410004}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -3032,9 +4428,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 15.935, y: 1.4589996}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 25.719, y: 1.868}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -3042,9 +4444,15 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 27.194, y: 0.8759994}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 36.97, y: 1.0029984}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -3052,6 +4460,7 @@ TextureImporter:
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
+<<<<<<< Updated upstream
     - position: {x: 38.103, y: 0.18999863}
       boneWeight:
         weight0: 1
@@ -3125,6 +4534,11 @@ TextureImporter:
     - position: {x: 24.630156, y: 36.63635}
       boneWeight:
         weight0: 1
+=======
+    - position: {x: 48.225, y: 0.25899887}
+      boneWeight:
+        weight0: 0
+>>>>>>> Stashed changes
         weight1: 0
         weight2: 0
         weight3: 0
@@ -3133,10 +4547,17 @@ TextureImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
+<<<<<<< Updated upstream
     indices: 000000001e000000010000000e00000011000000100000001100000021000000120000001200000021000000130000001300000022000000140000001300000021000000220000001400000023000000150000001400000022000000230000000e000000100000000f000000150000002300000016000000160000002300000020000000170000001a0000001800000017000000200000001a000000180000001a000000190000001a000000200000001b0000001b000000200000001c0000001c0000001f0000001d0000001600000020000000170000001c000000200000001f0000000d000000110000000e0000000c000000110000000d000000010000000300000002000000010000001f00000003000000010000001e0000001f000000030000001f00000004000000040000001f00000005000000050000002300000006000000050000001f000000200000000c000000210000001100000005000000200000002300000006000000230000002200000007000000220000000800000008000000210000000900000008000000220000002100000009000000210000000a0000000a000000210000000b0000000b000000210000000c0000000600000022000000070000001d0000001f0000001e000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 30}
+=======
+    indices: 000000000200000001000000000000001c00000002000000020000000400000003000000020000000500000004000000020000001c00000005000000050000001b00000006000000050000001c0000001b000000060000001400000007000000060000001500000014000000060000001600000015000000060000001a00000016000000060000001b0000001a00000007000000130000000800000007000000140000001300000008000000130000000900000009000000120000000a0000000900000013000000120000000a0000000c0000000b0000000a0000000d0000000c0000000a000000120000000d0000000d000000110000000e0000000d00000012000000110000000e000000100000000f0000000e0000001100000010000000160000001900000017000000160000001a00000019000000170000001900000018000000
+    edges:
+    - {x: 0, y: 1}
+    - {x: 0, y: 28}
+>>>>>>> Stashed changes
     - {x: 1, y: 2}
     - {x: 2, y: 3}
     - {x: 3, y: 4}
@@ -3164,8 +4585,11 @@ TextureImporter:
     - {x: 25, y: 26}
     - {x: 26, y: 27}
     - {x: 27, y: 28}
+<<<<<<< Updated upstream
     - {x: 28, y: 29}
     - {x: 29, y: 30}
+=======
+>>>>>>> Stashed changes
     tessellationDetail: 0
     uvTransform: {x: -15, y: 354}
     spritePosition: {x: 154, y: 52}
@@ -3180,7 +4604,11 @@ TextureImporter:
       y: 485
       width: 0
       height: 0
+<<<<<<< Updated upstream
     spriteID: 24ae61b4bd0410948b5e444575e72fe5
+=======
+    spriteID: baba7df348af4524abdba35dae8b6fc0
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3201,7 +4629,11 @@ TextureImporter:
       y: 485
       width: 0
       height: 0
+<<<<<<< Updated upstream
     spriteID: b9a6b4164b558414491f969f29495eee
+=======
+    spriteID: 851475a772de95344aab9799358d4f61
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3222,7 +4654,11 @@ TextureImporter:
       y: 485
       width: 0
       height: 0
+<<<<<<< Updated upstream
     spriteID: 1f8e3a70b1123de4a80d5244fafd5858
+=======
+    spriteID: ee77e82cedd2bc64eba506795b995da6
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3243,7 +4679,11 @@ TextureImporter:
       y: 485
       width: 0
       height: 0
+<<<<<<< Updated upstream
     spriteID: c1e58ae4783b8634c81f253324a968e5
+=======
+    spriteID: 43c9fab10f304fe43b905124c3bfd41f
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3264,7 +4704,11 @@ TextureImporter:
       y: 485
       width: 0
       height: 0
+<<<<<<< Updated upstream
     spriteID: d3b8352fab5e20343a276a43129efd3c
+=======
+    spriteID: b348334561b00a6449da71c49f9b34ca
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3285,7 +4729,11 @@ TextureImporter:
       y: 485
       width: 0
       height: 0
+<<<<<<< Updated upstream
     spriteID: a1a587026867f7b45b193363c664bc3e
+=======
+    spriteID: d07464a546b82084b9fbb1991291a605
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3306,7 +4754,11 @@ TextureImporter:
       y: 485
       width: 0
       height: 0
+<<<<<<< Updated upstream
     spriteID: 470a06b948fc72e4ab2c52c6275dbccb
+=======
+    spriteID: def8ad06d86f14040b2efe523ecc24c9
+>>>>>>> Stashed changes
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3319,65 +4771,116 @@ TextureImporter:
   characterData:
     bones:
     - name: bone_1
+<<<<<<< Updated upstream
       guid: de6a9e20e33e4a7478efc74ec0413198
       position: {x: 169.2125, y: 160.67917, z: 0}
       rotation: {x: 0, y: 0, z: 0.6778618, w: 0.7351894}
       length: 124.64752
+=======
+      guid: 51d9cdea6f0644b4aa12fba1f50f304e
+      position: {x: 171.08304, y: 152.78647, z: 0}
+      rotation: {x: 0, y: 0, z: 0.69798535, w: 0.716112}
+      length: 123.06881
+>>>>>>> Stashed changes
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: bone_2
+<<<<<<< Updated upstream
       guid: ccecc74dc10c79e4aa785ded18bf6254
       position: {x: 124.647514, y: -0.0000045514826, z: 0}
       rotation: {x: 0, y: 0, z: 0.06790727, w: 0.9976917}
       length: 172.70952
+=======
+      guid: 71c8ef29c3666dc4b8ee55720a13d7ea
+      position: {x: 123.068825, y: 0.0000020826908, z: 0}
+      rotation: {x: 0, y: 0, z: -0.0022706392, w: 0.99999744}
+      length: 177.81657
+>>>>>>> Stashed changes
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: bone_3
+<<<<<<< Updated upstream
       guid: 19e56eced3638eb48b10ffa7650d8993
       position: {x: -13.770597, y: 12.349834, z: 0}
       rotation: {x: 0, y: -0, z: -0.99991083, w: 0.0133530265}
       length: 82.25987
+=======
+      guid: 1e9f670f703805140b186c44064467fc
+      position: {x: 0.88854647, y: 18.248856, z: 0}
+      rotation: {x: 0, y: -0, z: -0.99917895, w: 0.04051442}
+      length: 88.416824
+>>>>>>> Stashed changes
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: bone_4
+<<<<<<< Updated upstream
       guid: 3985819bd126d9142b997c059f470dad
       position: {x: -13.320531, y: -11.95665, z: 0}
       rotation: {x: 0, y: -0, z: -0.9996432, w: 0.026711224}
       length: 80.11808
+=======
+      guid: e7bc76444bb091d40b4bea853fdcc5da
+      position: {x: -1.2319723, y: -11.207039, z: 0}
+      rotation: {x: 0, y: -0, z: -0.99941725, w: 0.034135222}
+      length: 82.906944
+>>>>>>> Stashed changes
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: bone_5
+<<<<<<< Updated upstream
       guid: c19b7decd05c11e47bcc0696f8600036
       position: {x: 91.83916, y: 49.364376, z: 0}
       rotation: {x: 0, y: 0, z: -0.9141644, w: 0.40534365}
       length: 89.87607
       parentId: 0
+=======
+      guid: 006281cdb4bf9bf4e9d345e548268eae
+      position: {x: -26.459501, y: 45.15585, z: 0}
+      rotation: {x: 0, y: -0, z: -0.9145116, w: 0.4045597}
+      length: 82.71051
+      parentId: 1
+>>>>>>> Stashed changes
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: bone_6
+<<<<<<< Updated upstream
       guid: 5f2984d7fbe91824aa5bb94e1c438cea
       position: {x: 89.87605, y: 0.0000067175806, z: 0}
       rotation: {x: 0, y: 0, z: 0.46522978, w: 0.88519}
       length: 78.724655
+=======
+      guid: a584ba23faddc5a41b2461163b832ed0
+      position: {x: 82.71051, y: 0.000006737585, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5098486, w: 0.8602642}
+      length: 71.250305
+>>>>>>> Stashed changes
       parentId: 4
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: bone_7
+<<<<<<< Updated upstream
       guid: d956bd6a5e405d8488be34049442b285
       position: {x: 78.724655, y: -0.0000049917244, z: 0}
       rotation: {x: 0, y: 0, z: 0.5535193, w: 0.83283645}
       length: 117.23341
       parentId: 5
+=======
+      guid: bbdd35e4aed57cd4185a131b05f25c20
+      position: {x: 259.58594, y: 195.6572, z: 0}
+      rotation: {x: 0, y: 0, z: 0.22314261, w: 0.9747858}
+      length: 61.97373
+      parentId: -1
+>>>>>>> Stashed changes
       color:
         serializedVersion: 2
         rgba: 4278223103
@@ -3387,8 +4890,13 @@ TextureImporter:
         y: 82
         width: 137
         height: 286
+<<<<<<< Updated upstream
       spriteId: 977106926139fae4c88902cc120c42a7
       bones: 06000000
+=======
+      spriteId: b6a6eed30b98aa5408bd741748be9169
+      bones: 
+>>>>>>> Stashed changes
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -3396,8 +4904,13 @@ TextureImporter:
         y: 275
         width: 233
         height: 294
+<<<<<<< Updated upstream
       spriteId: 500a25b24396c504ca9b01b61e56e250
       bones: 01000000
+=======
+      spriteId: 92e71c33487c0c148a05b3b11a07779d
+      bones: 
+>>>>>>> Stashed changes
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -3405,8 +4918,13 @@ TextureImporter:
         y: 171
         width: 114
         height: 71
+<<<<<<< Updated upstream
       spriteId: 75d138ee142fa194b8c81bf7b2933a8e
       bones: 05000000
+=======
+      spriteId: ac6042f0480d2794684bf935b1bfb93f
+      bones: 
+>>>>>>> Stashed changes
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -3414,8 +4932,13 @@ TextureImporter:
         y: 180
         width: 98
         height: 92
+<<<<<<< Updated upstream
       spriteId: 1e4245a5d34fcab4fa40f39ad6e0e97c
       bones: 04000000
+=======
+      spriteId: 57bd52f2de4f01947825b706aa1e1429
+      bones: 
+>>>>>>> Stashed changes
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -3423,8 +4946,13 @@ TextureImporter:
         y: 132
         width: 127
         height: 155
+<<<<<<< Updated upstream
       spriteId: c0af7df7fb87d7b4486d9760c5997bb9
       bones: 00000000
+=======
+      spriteId: 2fdf2e3e56d24694099fe4cb3249de71
+      bones: 
+>>>>>>> Stashed changes
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -3432,8 +4960,13 @@ TextureImporter:
         y: 52
         width: 67
         height: 100
+<<<<<<< Updated upstream
       spriteId: 242aa0f074586d8418f4edbcedd6035e
       bones: 02000000
+=======
+      spriteId: fa86e219dc0cfa946bfe2fed99083293
+      bones: 
+>>>>>>> Stashed changes
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -3441,6 +4974,7 @@ TextureImporter:
         y: 52
         width: 68
         height: 99
+<<<<<<< Updated upstream
       spriteId: 5ae32dde61d75b04495e00c4923ec290
       bones: 03000000
       parentGroup: 0
@@ -3451,6 +4985,9 @@ TextureImporter:
         width: 0
         height: 0
       spriteId: 24ae61b4bd0410948b5e444575e72fe5
+=======
+      spriteId: 4038b6ac805f9de46bae910f0d59c4b4
+>>>>>>> Stashed changes
       bones: 
       parentGroup: 0
       order: 0
@@ -3459,7 +4996,11 @@ TextureImporter:
         y: 600
         width: 0
         height: 0
+<<<<<<< Updated upstream
       spriteId: b9a6b4164b558414491f969f29495eee
+=======
+      spriteId: baba7df348af4524abdba35dae8b6fc0
+>>>>>>> Stashed changes
       bones: 
       parentGroup: 0
       order: 0
@@ -3468,7 +5009,11 @@ TextureImporter:
         y: 600
         width: 0
         height: 0
+<<<<<<< Updated upstream
       spriteId: 1f8e3a70b1123de4a80d5244fafd5858
+=======
+      spriteId: 851475a772de95344aab9799358d4f61
+>>>>>>> Stashed changes
       bones: 
       parentGroup: 0
       order: 0
@@ -3477,7 +5022,11 @@ TextureImporter:
         y: 600
         width: 0
         height: 0
+<<<<<<< Updated upstream
       spriteId: c1e58ae4783b8634c81f253324a968e5
+=======
+      spriteId: ee77e82cedd2bc64eba506795b995da6
+>>>>>>> Stashed changes
       bones: 
       parentGroup: 0
       order: 0
@@ -3486,7 +5035,11 @@ TextureImporter:
         y: 600
         width: 0
         height: 0
+<<<<<<< Updated upstream
       spriteId: d3b8352fab5e20343a276a43129efd3c
+=======
+      spriteId: 43c9fab10f304fe43b905124c3bfd41f
+>>>>>>> Stashed changes
       bones: 
       parentGroup: 0
       order: 0
@@ -3495,7 +5048,11 @@ TextureImporter:
         y: 600
         width: 0
         height: 0
+<<<<<<< Updated upstream
       spriteId: a1a587026867f7b45b193363c664bc3e
+=======
+      spriteId: b348334561b00a6449da71c49f9b34ca
+>>>>>>> Stashed changes
       bones: 
       parentGroup: 0
       order: 0
@@ -3504,7 +5061,20 @@ TextureImporter:
         y: 600
         width: 0
         height: 0
+<<<<<<< Updated upstream
       spriteId: 470a06b948fc72e4ab2c52c6275dbccb
+=======
+      spriteId: d07464a546b82084b9fbb1991291a605
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 400
+        y: 600
+        width: 0
+        height: 0
+      spriteId: def8ad06d86f14040b2efe523ecc24c9
+>>>>>>> Stashed changes
       bones: 
       parentGroup: 0
       order: 0
@@ -3520,7 +5090,47 @@ TextureImporter:
     characterGroups: []
     pivot: {x: 0, y: 0}
     boneReadOnly: 0
+<<<<<<< Updated upstream
   platformSettings: []
+=======
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+>>>>>>> Stashed changes
   mosaicLayers: 1
   characterMode: 1
   documentPivot: {x: 0.5, y: 0}
@@ -3543,7 +5153,11 @@ TextureImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< Updated upstream
     spriteID: c3195cde8807d494b9cc2732f25a29e1
+=======
+    spriteID: 36d56cc1353143a40a78886e0996d31f
+>>>>>>> Stashed changes
     layerID: 19
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -3553,7 +5167,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 64"
     isGroup: 0
     parentIndex: 0
+<<<<<<< Updated upstream
     spriteID: 977106926139fae4c88902cc120c42a7
+=======
+    spriteID: b6a6eed30b98aa5408bd741748be9169
+>>>>>>> Stashed changes
     layerID: 18
     mosaicPosition: {x: 245, y: 4}
     flatten: 0
@@ -3563,7 +5181,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 55"
     isGroup: 0
     parentIndex: 0
+<<<<<<< Updated upstream
     spriteID: 500a25b24396c504ca9b01b61e56e250
+=======
+    spriteID: 92e71c33487c0c148a05b3b11a07779d
+>>>>>>> Stashed changes
     layerID: 17
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -3573,7 +5195,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 63"
     isGroup: 0
     parentIndex: 0
+<<<<<<< Updated upstream
     spriteID: 75d138ee142fa194b8c81bf7b2933a8e
+=======
+    spriteID: ac6042f0480d2794684bf935b1bfb93f
+>>>>>>> Stashed changes
     layerID: 16
     mosaicPosition: {x: 245, y: 298}
     flatten: 0
@@ -3583,7 +5209,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 62"
     isGroup: 0
     parentIndex: 0
+<<<<<<< Updated upstream
     spriteID: 1e4245a5d34fcab4fa40f39ad6e0e97c
+=======
+    spriteID: 57bd52f2de4f01947825b706aa1e1429
+>>>>>>> Stashed changes
     layerID: 15
     mosaicPosition: {x: 139, y: 306}
     flatten: 0
@@ -3593,7 +5223,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 56"
     isGroup: 0
     parentIndex: 0
+<<<<<<< Updated upstream
     spriteID: c0af7df7fb87d7b4486d9760c5997bb9
+=======
+    spriteID: 2fdf2e3e56d24694099fe4cb3249de71
+>>>>>>> Stashed changes
     layerID: 14
     mosaicPosition: {x: 4, y: 306}
     flatten: 0
@@ -3603,7 +5237,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 57"
     isGroup: 0
     parentIndex: 0
+<<<<<<< Updated upstream
     spriteID: 242aa0f074586d8418f4edbcedd6035e
+=======
+    spriteID: fa86e219dc0cfa946bfe2fed99083293
+>>>>>>> Stashed changes
     layerID: 13
     mosaicPosition: {x: 245, y: 377}
     flatten: 0
@@ -3613,7 +5251,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 57"
     isGroup: 0
     parentIndex: 0
+<<<<<<< Updated upstream
     spriteID: 5ae32dde61d75b04495e00c4923ec290
+=======
+    spriteID: 4038b6ac805f9de46bae910f0d59c4b4
+>>>>>>> Stashed changes
     layerID: 12
     mosaicPosition: {x: 139, y: 406}
     flatten: 0
@@ -3623,7 +5265,11 @@ TextureImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< Updated upstream
     spriteID: 54403261431c8804fb90ca1495986b3d
+=======
+    spriteID: f90a4bff8d1e3bb4499998e74aeb38e8
+>>>>>>> Stashed changes
     layerID: 10
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -3633,7 +5279,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 50"
     isGroup: 0
     parentIndex: 8
+<<<<<<< Updated upstream
     spriteID: 24ae61b4bd0410948b5e444575e72fe5
+=======
+    spriteID: baba7df348af4524abdba35dae8b6fc0
+>>>>>>> Stashed changes
     layerID: 9
     mosaicPosition: {x: 245, y: 485}
     flatten: 0
@@ -3643,7 +5293,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 49"
     isGroup: 0
     parentIndex: 8
+<<<<<<< Updated upstream
     spriteID: b9a6b4164b558414491f969f29495eee
+=======
+    spriteID: 851475a772de95344aab9799358d4f61
+>>>>>>> Stashed changes
     layerID: 8
     mosaicPosition: {x: 253, y: 485}
     flatten: 0
@@ -3653,7 +5307,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 53"
     isGroup: 0
     parentIndex: 8
+<<<<<<< Updated upstream
     spriteID: 1f8e3a70b1123de4a80d5244fafd5858
+=======
+    spriteID: ee77e82cedd2bc64eba506795b995da6
+>>>>>>> Stashed changes
     layerID: 7
     mosaicPosition: {x: 261, y: 485}
     flatten: 0
@@ -3663,7 +5321,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 47"
     isGroup: 0
     parentIndex: 8
+<<<<<<< Updated upstream
     spriteID: c1e58ae4783b8634c81f253324a968e5
+=======
+    spriteID: 43c9fab10f304fe43b905124c3bfd41f
+>>>>>>> Stashed changes
     layerID: 6
     mosaicPosition: {x: 269, y: 485}
     flatten: 0
@@ -3673,7 +5335,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 47"
     isGroup: 0
     parentIndex: 8
+<<<<<<< Updated upstream
     spriteID: d3b8352fab5e20343a276a43129efd3c
+=======
+    spriteID: b348334561b00a6449da71c49f9b34ca
+>>>>>>> Stashed changes
     layerID: 5
     mosaicPosition: {x: 277, y: 485}
     flatten: 0
@@ -3683,7 +5349,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 51"
     isGroup: 0
     parentIndex: 8
+<<<<<<< Updated upstream
     spriteID: a1a587026867f7b45b193363c664bc3e
+=======
+    spriteID: d07464a546b82084b9fbb1991291a605
+>>>>>>> Stashed changes
     layerID: 4
     mosaicPosition: {x: 285, y: 485}
     flatten: 0
@@ -3693,7 +5363,11 @@ TextureImporter:
     spriteName: "\u56FE\u5C42 51"
     isGroup: 0
     parentIndex: 8
+<<<<<<< Updated upstream
     spriteID: 470a06b948fc72e4ab2c52c6275dbccb
+=======
+    spriteID: def8ad06d86f14040b2efe523ecc24c9
+>>>>>>> Stashed changes
     layerID: 3
     mosaicPosition: {x: 293, y: 485}
     flatten: 0
@@ -3703,7 +5377,11 @@ TextureImporter:
     spriteName: 
     isGroup: 0
     parentIndex: -1
+<<<<<<< Updated upstream
     spriteID: 86ed5db5478acec43a6f74eadc472f2b
+=======
+    spriteID: cfcaa30fda448d44cb7c3f98470ad772
+>>>>>>> Stashed changes
     layerID: 1
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -3714,10 +5392,17 @@ TextureImporter:
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   spriteSizeExpandChanged: 0
+<<<<<<< Updated upstream
   generateGOHierarchy: 0
+=======
+  generateGOHierarchy: 1
+>>>>>>> Stashed changes
   textureAssetName: 
   prefabAssetName: 
   spriteLibAssetName: 
   skeletonAssetName: 
   secondarySpriteTextures: []
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

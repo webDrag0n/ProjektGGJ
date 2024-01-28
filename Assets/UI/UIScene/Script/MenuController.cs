@@ -9,19 +9,26 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     public GameObject titlePanel;
+
+    public GameObject creditsPanel;
     
     [Header("Main Menu")]
     public GameObject mainMenuPanel;
     public Button gameStartButton;
-    public Button optionsButton;
+    // public Button optionsButton;
     public Button creditsButton;
     public Button exitButton;
+    public Button mainMenuButton;
     
     [Header("Options")]
     public GameObject optionsPanel;
     
     [Header("Intro")]
     public GameObject introPanel;
+    public GameObject intro1;
+    public GameObject intro2;
+    public GameObject intro3;
+    public GameObject intro4;
     
     // TODO: Animation?
     public Animator introAnimator;
@@ -29,7 +36,7 @@ public class MenuController : MonoBehaviour
     [Header("Next Scene")]
     public string scene;
 
-    private enum Panels { Title, MainMenu, Options, Intro};
+    private enum Panels { Title, MainMenu, Options, Intro, Credits, C1, C2, C3, C4 }
 
     private Panels _State;
     
@@ -37,18 +44,29 @@ public class MenuController : MonoBehaviour
     void Start()
     {
         SwitchToPanel(Panels.Title);
-        gameStartButton.onClick.AddListener(GameStart);
-        optionsButton.onClick.AddListener(Options);
-        // creditsButton.onClick.AddListener(Credits);
+        intro1.SetActive(false);
+        intro2.SetActive(false);
+        intro3.SetActive(false);
+        intro4.SetActive(false);
+        gameStartButton.onClick.AddListener(Intro);
+        // optionsButton.onClick.AddListener(Options);
+        creditsButton.onClick.AddListener(Credits);
         exitButton.onClick.AddListener(Exit);
+        mainMenuButton.onClick.AddListener(MainMenu);
     }
     
     // Update is called once per frame
     void Update()
     {
-        if (_State==Panels.Title&&Input.anyKey)
+        if (Input.anyKeyDown)
         {
-            SwitchToPanel(Panels.MainMenu);
+            if (_State==Panels.Title)
+            {
+                SwitchToPanel(Panels.MainMenu);
+            } else if (_State == Panels.Intro || _State == Panels.C1 || _State == Panels.C2 || _State == Panels.C3 || _State == Panels.C4)
+            {
+                nextIntro();
+            }
         }
     }
 
@@ -60,38 +78,82 @@ public class MenuController : MonoBehaviour
                 _State = Panels.Title;
                 titlePanel.SetActive(true);
                 mainMenuPanel.SetActive(false);
-                optionsPanel.SetActive(false);
+                // optionsPanel.SetActive(false);
+                creditsPanel.SetActive(false);
                 introPanel.SetActive(false);
                 break;
             case Panels.MainMenu:
                 _State = Panels.MainMenu;
                 titlePanel.SetActive(false);
                 mainMenuPanel.SetActive(true);
-                optionsPanel.SetActive(false);
+                // optionsPanel.SetActive(false);
+                creditsPanel.SetActive(false);
                 introPanel.SetActive(false);
                 break;
-            case Panels.Options:
-                _State = Panels.Options;
-                titlePanel.SetActive(false);
-                mainMenuPanel.SetActive(false);
-                optionsPanel.SetActive(true);
-                introPanel.SetActive(false);
-                break;
+            // case Panels.Options:
+            //     _State = Panels.Options;
+            //     titlePanel.SetActive(false);
+            //     mainMenuPanel.SetActive(false);
+            //     optionsPanel.SetActive(true);
+            //     introPanel.SetActive(false);
+            //     break;
             case Panels.Intro:
-                _State = Panels.Intro;
+                _State = Panels.C1;
                 titlePanel.SetActive(false);
                 mainMenuPanel.SetActive(false);
-                optionsPanel.SetActive(false);
+                // optionsPanel.SetActive(false);
+                creditsPanel.SetActive(false);
                 introPanel.SetActive(true);
+                break;
+            case Panels.Credits:
+                _State = Panels.Credits;
+                titlePanel.SetActive(false);
+                mainMenuPanel.SetActive(false);
+                // optionsPanel.SetActive(false);
+                creditsPanel.SetActive(true);
+                introPanel.SetActive(false);
                 break;
         }
     }
+
+    private void nextIntro()
+    {
+        Debug.Log("next");
+        if (_State == Panels.Intro)
+        {
+            titlePanel.SetActive(false);
+            mainMenuPanel.SetActive(false);
+            creditsPanel.SetActive(false);
+            intro1.SetActive(true);
+            _State = Panels.C1;
+        } else if (_State == Panels.C1)
+        {
+            intro1.SetActive(false);
+            intro2.SetActive(true);
+            _State = Panels.C2;
+        }
+        else if (_State == Panels.C2)
+        {
+            intro2.SetActive(false);
+            intro3.SetActive(true);
+            _State = Panels.C3;
+        }
+        else if (_State == Panels.C3)
+        {
+            intro3.SetActive(false);
+            intro4.SetActive(true);
+            _State = Panels.C4;
+        }
+        else if (_State == Panels.C4)
+        {
+            StartCoroutine(LoadGameScene());
+        }
+    }
     
-    private void GameStart()
+    private void Intro()
     {
         SwitchToPanel(Panels.Intro);
-        // introAnimator.SetTrigger("PlayIntro");
-        StartCoroutine(LoadGameScene());
+        intro1.SetActive(true);
     }
 
     public void MainMenu()
@@ -106,8 +168,7 @@ public class MenuController : MonoBehaviour
     
     private void Credits()
     {
-        // TODO: make Credits panel
-        // SwitchToPanel(Panels.Credits);
+        SwitchToPanel(Panels.Credits);
     }
     
     public void Exit()
@@ -118,7 +179,6 @@ public class MenuController : MonoBehaviour
     // Load the game scene asynchronously
     private IEnumerator LoadGameScene()
     {
-        yield return new WaitForSeconds(5f);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
 
         // Wait until the asynchronous scene fully loads

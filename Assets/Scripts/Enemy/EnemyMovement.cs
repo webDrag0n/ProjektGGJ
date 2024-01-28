@@ -22,16 +22,16 @@ public class EnemyMovement : MonoBehaviour
     public float range = 3f;
     float distance = 0f;
 
-    public LayerMask groundLayer; // µØÃæµÄÍ¼²ã
-    public float rayDistance = 0.001f; // ÉäÏßµÄ¼ì²â¾àÀë
-    public bool isGrounded; // ÎïÌåÊÇ·ñÔÚµØÃæÉÏ
-    private CapsuleCollider2D cc; // ÎïÌåµÄÅö×²Æ÷×é¼ş
+    public LayerMask groundLayer; // åœ°é¢çš„å›¾å±‚
+    public float rayDistance = 0.001f; // å°„çº¿çš„æ£€æµ‹è·ç¦»
+    public bool isGrounded; // ç‰©ä½“æ˜¯å¦åœ¨åœ°é¢ä¸Š
+    private CapsuleCollider2D cc; // ç‰©ä½“çš„ç¢°æ’å™¨ç»„ä»¶
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        cc = GetComponent<CapsuleCollider2D>(); // »ñÈ¡Åö×²Æ÷×é¼ş
+        cc = GetComponent<CapsuleCollider2D>(); // è·å–ç¢°æ’å™¨ç»„ä»¶
         anim = GetComponent<Animator>();
         SetRandomDirection();
     }
@@ -143,13 +143,13 @@ public class EnemyMovement : MonoBehaviour
     }
     void CheckGround()
     {
-        // ´ÓÎïÌåµÄµ×²¿ÖĞĞÄ·¢ÉäÒ»ÌõÏòÏÂµÄÉäÏß£¬¼ì²âÊÇ·ñÅöµ½µØÃæÍ¼²ã
+        // ä»ç‰©ä½“çš„åº•éƒ¨ä¸­å¿ƒå‘å°„ä¸€æ¡å‘ä¸‹çš„å°„çº¿ï¼Œæ£€æµ‹æ˜¯å¦ç¢°åˆ°åœ°é¢å›¾å±‚
         //Vector2 origin = transform.position + Vector3.down * cc.size.y / 2;
         Vector2 origin = transform.position;
         RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, rayDistance, groundLayer);
         Debug.DrawRay(origin, Vector2.down * rayDistance, Color.red);
 
-        // Èç¹ûÅöµ½µØÃæ£¬ÉèÖÃisGroundedÎªtrue£¬²¢½«¸ÕÌåµÄÖØÁ¦Ëõ·ÅÉèÖÃÎª0£¬·ÀÖ¹ÎïÌåÏÂ³Á
+        // å¦‚æœç¢°åˆ°åœ°é¢ï¼Œè®¾ç½®isGroundedä¸ºtrueï¼Œå¹¶å°†åˆšä½“çš„é‡åŠ›ç¼©æ”¾è®¾ç½®ä¸º0ï¼Œé˜²æ­¢ç‰©ä½“ä¸‹æ²‰
         if (hit.collider != null)
         {
             isGrounded = true;
@@ -157,7 +157,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            // Èç¹ûÃ»ÓĞÅöµ½µØÃæ£¬ÉèÖÃisGroundedÎªfalse£¬²¢½«¸ÕÌåµÄÖØÁ¦Ëõ·ÅÉèÖÃÎª1£¬ÈÃÎïÌåÊÜÖØÁ¦Ó°Ïì
+            // å¦‚æœæ²¡æœ‰ç¢°åˆ°åœ°é¢ï¼Œè®¾ç½®isGroundedä¸ºfalseï¼Œå¹¶å°†åˆšä½“çš„é‡åŠ›ç¼©æ”¾è®¾ç½®ä¸º1ï¼Œè®©ç‰©ä½“å—é‡åŠ›å½±å“
             isGrounded = false;
             rb.gravityScale = 1;
         }

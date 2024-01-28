@@ -31,9 +31,11 @@ public class PlayerHeadCollide : MonoBehaviour
 
     private void Dead()
     {
+        player.gameObject.SetActive(false);
         Debug.Log("Character died!");
         player.transform.position = Vector3.zero;
         player.transform.rotation = Quaternion.identity;
+        player.gameObject.SetActive(true);
         // TODO: Death logic
         // manager.GameOver();
     }

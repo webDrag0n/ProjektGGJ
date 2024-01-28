@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Interactables;
+using UnityEditor.Animations;
 using UnityEngine;
 
 // TODO:相机检测地图边缘，drag优美曲线
@@ -24,6 +25,8 @@ public class HammerTest : MonoBehaviour
     public List<float> force;
     public List<float> counterForce;
     public float maxTorque = 300f;
+
+    private Animator animator;
     
     private bool isGrounded;
 
@@ -32,7 +35,7 @@ public class HammerTest : MonoBehaviour
 
     private void Start()
     {
-        Instance = this;
+        animator = GetComponent<Animator>();
         hinge = character.GetComponent<HingeJoint2D>();
         motor = hinge.motor;
         motor.maxMotorTorque = maxTorque;
@@ -64,7 +67,7 @@ public class HammerTest : MonoBehaviour
         // Check for player input to punch an enemy
         if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time - lastPunchTime > punchCooldown)
         {
-            Punch();
+            animator.Play("Punch");
             lastPunchTime = Time.time;
         }
     }
@@ -149,7 +152,7 @@ public class HammerTest : MonoBehaviour
     void Punch()
     {
         RaycastHit2D hit = Physics2D.Raycast(hammer.transform.position, hingeDirection, punchDist, rayMask);
-
+        
         if (hit.collider != null)
         {
             Debug.Log("Punch hit:" + hit.collider.tag);
@@ -178,7 +181,7 @@ public class HammerTest : MonoBehaviour
                     character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * counterForce[index], ForceMode2D.Impulse);
                     return;
                 }
-
+                
                 index++;
             }
         }

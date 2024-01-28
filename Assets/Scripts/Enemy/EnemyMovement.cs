@@ -7,8 +7,8 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
-    float speed = 1;
-    Vector2 direction = Vector2.zero;
+    public float speed = 1;
+    public Vector2 direction = Vector2.zero;
 
     const float defaultDirectionTime = 5f;
     float directionTime = defaultDirectionTime;
@@ -16,11 +16,10 @@ public class EnemyMovement : MonoBehaviour
     const float defaultChangeDirectionTime = 0.2f;
     float changeDirectionTime = 0f;
 
-    const float defaultAttackedTime = 3f;
-    float attackedTime = 0f;
+    public float attackedTime = 0f;
 
     Vector2 playerPos;
-    float range = 3f;
+    public float range = 3f;
     float distance = 0f;
     // Start is called before the first frame update
     void Start()
@@ -36,13 +35,28 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle") && changeDirectionTime <= 0)
         {
             direction = -direction;
+            SetAnimationDirection();
+            //Vector3 scaleChange = new Vector3(-2 * transform.localScale.x, 0, 0);
+            //Vector3 newScale = transform.localScale + scaleChange;
+            //this.transform.localScale = newScale;
             changeDirectionTime = defaultChangeDirectionTime;
+        }
+    }
+
+    void SetAnimationDirection()
+    {
+        if (direction.x * transform.localScale.x <= 0)
+        {
+            Vector3 scaleChange = new Vector3(-2 * transform.localScale.x, 0, 0);
+            Vector3 newScale = transform.localScale + scaleChange;
+            this.transform.localScale = newScale;
         }
     }
 
     void SetRandomDirection()
     {
         direction = Utils.GetRandomVector();
+        SetAnimationDirection();
     }
 
     // Update is called once per frame
@@ -79,8 +93,8 @@ public class EnemyMovement : MonoBehaviour
     {
         if (direction.magnitude > 0f)
         {
-            anim.SetFloat("InputX", direction.x);
-            anim.SetFloat("InputY", direction.y);
+            //anim.SetFloat("InputX", direction.x);
+            //anim.SetFloat("InputY", direction.y);
             anim.SetBool("isWalking", true);
         }
         else
@@ -96,6 +110,7 @@ public class EnemyMovement : MonoBehaviour
             attackedTime -= Time.deltaTime;
         }
         direction = (playerPos - (Vector2)transform.position).normalized;
+        SetAnimationDirection();
         rb.MovePosition((Vector2)transform.position + direction * speed * Time.deltaTime);
     }
 

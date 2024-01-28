@@ -70,7 +70,7 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         GetDistance();
-        CheckGround();
+        //CheckGround();
         SetAnim();
         if (isGrounded)
         {
@@ -160,6 +160,25 @@ public class EnemyMovement : MonoBehaviour
             // 如果没有碰到地面，设置isGrounded为false，并将刚体的重力缩放设置为1，让物体受重力影响
             isGrounded = false;
             rb.gravityScale = 1;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (!isGrounded)
+        {
+            if (collision.transform.tag == "Ground")
+            {
+                isGrounded = true;
+            }
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Ground")
+        {
+            isGrounded = false;
         }
     }
 }

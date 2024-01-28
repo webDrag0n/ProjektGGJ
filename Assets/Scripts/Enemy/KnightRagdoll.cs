@@ -16,17 +16,9 @@ public class KnightEnemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MakeItRagdoll()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            MakeItRagdoll();
-        }
-    }
-
-    void MakeItRagdoll()
-    {
+        Destroy(gameObject);
         am.enabled = false;
         gameObject.GetComponent<Collider2D>().enabled = false;
         for (int i = 0; i < BodyParts.Length; i++)

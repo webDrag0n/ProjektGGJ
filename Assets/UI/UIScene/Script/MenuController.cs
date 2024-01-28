@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
     [Header("Main Menu")]
     public GameObject mainMenuPanel;
     public Button gameStartButton;
-    // public Button optionsButton;
+    public Button optionsButton;
     public Button creditsButton;
     public Button exitButton;
     public Button mainMenuButton;
@@ -49,7 +49,7 @@ public class MenuController : MonoBehaviour
         intro3.SetActive(false);
         intro4.SetActive(false);
         gameStartButton.onClick.AddListener(Intro);
-        // optionsButton.onClick.AddListener(Options);
+        optionsButton.onClick.AddListener(Options);
         creditsButton.onClick.AddListener(Credits);
         exitButton.onClick.AddListener(Exit);
         mainMenuButton.onClick.AddListener(MainMenu);
@@ -78,7 +78,7 @@ public class MenuController : MonoBehaviour
                 _State = Panels.Title;
                 titlePanel.SetActive(true);
                 mainMenuPanel.SetActive(false);
-                // optionsPanel.SetActive(false);
+                optionsPanel.SetActive(false);
                 creditsPanel.SetActive(false);
                 introPanel.SetActive(false);
                 break;
@@ -86,22 +86,22 @@ public class MenuController : MonoBehaviour
                 _State = Panels.MainMenu;
                 titlePanel.SetActive(false);
                 mainMenuPanel.SetActive(true);
-                // optionsPanel.SetActive(false);
+                optionsPanel.SetActive(false);
                 creditsPanel.SetActive(false);
                 introPanel.SetActive(false);
                 break;
-            // case Panels.Options:
-            //     _State = Panels.Options;
-            //     titlePanel.SetActive(false);
-            //     mainMenuPanel.SetActive(false);
-            //     optionsPanel.SetActive(true);
-            //     introPanel.SetActive(false);
-            //     break;
+            case Panels.Options:
+                _State = Panels.Options;
+                titlePanel.SetActive(false);
+                mainMenuPanel.SetActive(false);
+                optionsPanel.SetActive(true);
+                introPanel.SetActive(false);
+                break;
             case Panels.Intro:
                 _State = Panels.C1;
                 titlePanel.SetActive(false);
                 mainMenuPanel.SetActive(false);
-                // optionsPanel.SetActive(false);
+                optionsPanel.SetActive(false);
                 creditsPanel.SetActive(false);
                 introPanel.SetActive(true);
                 break;
@@ -109,7 +109,7 @@ public class MenuController : MonoBehaviour
                 _State = Panels.Credits;
                 titlePanel.SetActive(false);
                 mainMenuPanel.SetActive(false);
-                // optionsPanel.SetActive(false);
+                optionsPanel.SetActive(false);
                 creditsPanel.SetActive(true);
                 introPanel.SetActive(false);
                 break;

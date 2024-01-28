@@ -62,7 +62,7 @@ public class OptionsController : MonoBehaviour
         InitializeResolutionOptions();
         
         string filePath = Application.persistentDataPath + "/" + "settings.json";
-        SaveButton.onClick.AddListener(()=>{menuAudio.Play();Apply();_SavedSettings.Save(filePath);});
+        SaveButton.onClick.AddListener(()=>{menuAudio.Play();Apply();_SavedSettings.Save(filePath);menuController.MainMenu();});
         ExitButton.onClick.AddListener(()=>{Cancel();menuController.MainMenu();});
         
         //stage saved settings

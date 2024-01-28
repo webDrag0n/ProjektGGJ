@@ -448,7 +448,7 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 823860612830668844}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_BreakAction: 3
+  m_BreakAction: 0
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.080000035, y: 1.0799999}
@@ -476,20 +476,22 @@ MonoBehaviour:
   character: {fileID: 4130867348681737057}
   rayMask:
     serializedVersion: 2
-    m_Bits: 1
-  groundRaycastDistance: 1
+    m_Bits: 257
+  groundRaycastDistance: 1.2
   forceTag:
   - Ground
   - Enemy
   force:
-  - 100
+  - 40
   - 20
   counterForce:
-  - 100
+  - 40
   - 20
-  maxTorque: 300
-  punchCooldown: 1
-  uppercutForce: []
+  maxTorque: 400
+  punchCooldown: 0.2
+  uppercutForce:
+  - 20
+  - 20
   punchDist: 1.5
 --- !u!70 &5428646932644990518
 CapsuleCollider2D:

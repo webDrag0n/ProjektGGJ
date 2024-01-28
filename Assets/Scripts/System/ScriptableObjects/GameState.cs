@@ -14,6 +14,12 @@ public class GameState : ScriptableObject
     public GameStatus status;
     private float score;
 
+    [Range(0f, 1f)]
+    public float music_volume;
+
+    [Range(0f, 2f)]
+    public float music_speed;
+
     public void Reset()
     {
         status = GameStatus.Stopped;

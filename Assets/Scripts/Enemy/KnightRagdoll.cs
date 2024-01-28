@@ -18,7 +18,6 @@ public class KnightEnemy : MonoBehaviour
 
     public void MakeItRagdoll()
     {
-        Destroy(gameObject);
         am.enabled = false;
         gameObject.GetComponent<Collider2D>().enabled = false;
         for (int i = 0; i < BodyParts.Length; i++)
@@ -27,5 +26,6 @@ public class KnightEnemy : MonoBehaviour
             BodyParts[i].GetComponent<Rigidbody2D>().isKinematic = false;
             BodyParts[i].GetComponent<Collider2D>().enabled = true;
         }
+        Object.Destroy(gameObject, 5f);
     }
 }

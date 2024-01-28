@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8030390899950540393}
   m_Layer: 0
   m_Name: right_hand
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 6043875019356101839}
   m_Layer: 0
   m_Name: leg_l
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 4901814474158165834}
   m_Layer: 0
   m_Name: head
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 187766555684964312}
   m_Layer: 0
   m_Name: body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 8605293537646437720}
   m_Layer: 0
   m_Name: arm2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,9 +488,10 @@ GameObject:
   - component: {fileID: 927169377497927585}
   - component: {fileID: 6866483158100730706}
   - component: {fileID: 236579050118434221}
+  - component: {fileID: 1424771464808338216}
   m_Layer: 0
   m_Name: head
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,7 +505,7 @@ Transform:
   m_GameObject: {fileID: 2195430189115262005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.27, y: 3.334, z: 0}
+  m_LocalPosition: {x: -0.57, y: 3.334, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -642,9 +643,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.22844046, y: -0.0111946445}
+  m_Offset: {x: 0.46020743, y: -0.01119453}
   serializedVersion: 2
-  m_Radius: 0.761104
+  m_Radius: 0.99105394
 --- !u!233 &236579050118434221
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -660,7 +661,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.2465158, y: -0.85217786}
+  m_Anchor: {x: 0.5465158, y: -0.85217786}
   m_ConnectedAnchor: {x: 0.41651586, y: 0.6868224}
   m_UseMotor: 0
   m_Motor:
@@ -670,6 +671,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: -20
     m_UpperAngle: 20
+--- !u!114 &1424771464808338216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195430189115262005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6fd3a15acae1845861fce4d0a0507a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8337385659158635110}
 --- !u!1 &3630737542396983119
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +700,7 @@ GameObject:
   - component: {fileID: 6110098142510311745}
   m_Layer: 0
   m_Name: right_arm
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,7 +902,7 @@ GameObject:
   - component: {fileID: 6003527402253926370}
   m_Layer: 0
   m_Name: body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1132,7 +1146,7 @@ GameObject:
   - component: {fileID: 6024729893977684624}
   m_Layer: 0
   m_Name: left_leg
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1332,7 +1346,7 @@ GameObject:
   - component: {fileID: 1826725119806473873}
   m_Layer: 0
   m_Name: leg_r
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1363,7 +1377,7 @@ GameObject:
   - component: {fileID: 5025250699483221568}
   m_Layer: 0
   m_Name: ragdoll
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1406,7 +1420,7 @@ GameObject:
   - component: {fileID: 209006509247417789}
   m_Layer: 0
   m_Name: right_leg
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1689,8 +1703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773fe03a8be8b8e4f8a85bf4d3d119f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arm: {fileID: 0}
-  arm_rb: {fileID: 0}
 --- !u!114 &1412958551000658800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,7 +1722,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  rayDistance: 0.1
+  rayDistance: 0.01
   isGrounded: 0
 --- !u!70 &9141051973480209035
 CapsuleCollider2D:
@@ -1830,7 +1842,7 @@ GameObject:
   - component: {fileID: 2571829686271182530}
   m_Layer: 0
   m_Name: arm1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

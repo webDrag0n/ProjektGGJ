@@ -7,6 +7,7 @@ using UnityEngine;
 // TODO:相机检测地图边缘，drag优美曲线
 public class HammerTest : MonoBehaviour
 {
+    public static HammerTest Instance;
     public Rigidbody2D hammer;
     public Rigidbody2D character;
     private HingeJoint2D hinge;
@@ -31,6 +32,7 @@ public class HammerTest : MonoBehaviour
 
     private void Start()
     {
+        Instance = this;
         hinge = character.GetComponent<HingeJoint2D>();
         motor = hinge.motor;
         motor.maxMotorTorque = maxTorque;

@@ -1722,7 +1722,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  rayDistance: 0.1
+  rayDistance: 0.01
   isGrounded: 0
 --- !u!70 &9141051973480209035
 CapsuleCollider2D:

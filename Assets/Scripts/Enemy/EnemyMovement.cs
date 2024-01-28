@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
-    float speed = 1;
+    public float speed = 1;
     public Vector2 direction = Vector2.zero;
 
     const float defaultDirectionTime = 5f;
@@ -16,10 +16,10 @@ public class EnemyMovement : MonoBehaviour
     const float defaultChangeDirectionTime = 0.2f;
     float changeDirectionTime = 0f;
 
-    float attackedTime = 0f;
+    public float attackedTime = 0f;
 
     Vector2 playerPos;
-    float range = 3f;
+    public float range = 3f;
     float distance = 0f;
     // Start is called before the first frame update
     void Start()

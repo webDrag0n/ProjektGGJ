@@ -105,6 +105,7 @@ public class HammerTest : MonoBehaviour
 
         return sign * angle;
     }
+    
 
     void SetSpeed(float speed)
     {

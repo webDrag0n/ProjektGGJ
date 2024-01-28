@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Interactables;
 using UnityEngine;
 
@@ -26,8 +27,11 @@ public class HammerTest : MonoBehaviour
     
     private bool isGrounded;
 
+    private bool isMainCam;
+
+    private Vector3 mousePosition;
     private Vector3 mouseDirection;
-    private Vector3 hingeDirection;
+    public static Vector3 hingeDirection;
 
     private void Start()
     {
@@ -41,15 +45,33 @@ public class HammerTest : MonoBehaviour
         
         pid = new PID(1e-2f, 0f, 1e-2f);
     }
+    
+    // Get the mouse position in world coordinates
+    // private void UpdateMousePosition()
+    // {
+    //     if (!GetComponent<CinemachineVirtualCamera>().isActiveAndEnabled)
+    //     {
+    //         mousePosition = Camera.allCameras[0].ScreenToWorldPoint(Input.mousePosition);
+    //     }
+    //     else
+    //     {
+    //         mousePosition = Camera.allCameras[1].ScreenToWorldPoint(Input.mousePosition);
+    //     }
+    //     
+    //     mousePosition.z = 0f;
+    // }
+    
+    
 
     void Update()
     {
-        // Get the mouse position in world coordinates
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0f;
-
+        // Debug.Log(isMainCam);
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // UpdateMousePosition();
         // Calculate the direction from the character to the mouse
         mouseDirection = (mousePosition - character.transform.position).normalized;
+        
+        Debug.DrawLine(character.transform.position, mousePosition, Color.red);
         
         hingeDirection = (Quaternion.Euler(
             hammer.transform.eulerAngles) * Vector3.down).normalized;

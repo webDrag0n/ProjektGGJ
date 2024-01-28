@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
             && target.position.y > y_wall_negative
             )
         {
-            transform.position = Vector3.Lerp(transform.position, target.position + new Vector3(0,0,-10), 5*Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, target.position + new Vector3(0,0,-10), 2*Time.deltaTime);
         }
     }
 }

@@ -123,6 +123,7 @@ public class EnemyMovement : MonoBehaviour
             attackedTime -= Time.deltaTime;
         }
         direction = (playerPos - (Vector2)transform.position).normalized;
+        direction = new Vector2(direction.x, 0);
         SetAnimationDirection();
         rb.MovePosition((Vector2)transform.position + direction * speed * Time.deltaTime);
     }

@@ -596,6 +596,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.x
       value: 0.07999995
       objectReference: {fileID: 0}
+    - target: {fileID: 3661761207821076762, guid: 06eb1547c964a1d4cac683b7a67b6f42, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 1.0799993
+      objectReference: {fileID: 0}
     - target: {fileID: 6043438314684787856, guid: 06eb1547c964a1d4cac683b7a67b6f42, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.2
@@ -807,13 +811,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1412958551000658800, guid: bb778770a22c6ec4f8447122525c0bbc, type: 3}
+      propertyPath: rayDistance
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 6661099900410263702, guid: bb778770a22c6ec4f8447122525c0bbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.1375203
       objectReference: {fileID: 0}
     - target: {fileID: 6661099900410263702, guid: bb778770a22c6ec4f8447122525c0bbc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: 6661099900410263702, guid: bb778770a22c6ec4f8447122525c0bbc, type: 3}
       propertyPath: m_LocalPosition.z

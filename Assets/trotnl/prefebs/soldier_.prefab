@@ -398,7 +398,7 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.595, y: -1.0550001}
   m_UseMotor: 0
@@ -496,21 +496,21 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_ConnectedRigidBody: {fileID: 686230637456900686}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.032, y: 0.995}
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: -0.5315252, y: 0.1841653}
+  m_ConnectedAnchor: {x: 0.028373541, y: -0.37594965}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -135
+    m_UpperAngle: 0
 --- !u!1 &858145195082171412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2365367967242749766, guid: 367ab5b9b9ffdd0448f554ceee32545f, type: 3}
@@ -602,7 +602,7 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.40999985, y: 1.0799999}
   m_UseMotor: 0
@@ -704,7 +704,7 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: -0.06500006, y: 1.785}
   m_UseMotor: 0
@@ -806,7 +806,7 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.27499998, y: -1.05}
   m_UseMotor: 0
@@ -898,7 +898,7 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: -0.60500014, y: 3.24}
   m_UseMotor: 0
@@ -1063,13 +1063,13 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_ConnectedRigidBody: {fileID: 699897450242159567}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.59000015, y: 1.675}
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0.026582738, y: 0.40210932}
+  m_ConnectedAnchor: {x: -0.061818182, y: 0.29720843}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1298,13 +1298,13 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_ConnectedRigidBody: {fileID: 8490458928007406338}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.361, y: 2.249}
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0.79144144, y: -0.6983094}
+  m_ConnectedAnchor: {x: 0.30648562, y: 0.31968546}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

@@ -27,8 +27,8 @@ public class HammerTest : MonoBehaviour
     
     private bool isGrounded;
 
-    private Vector3 mouseDirection;
-    private Vector3 hingeDirection;
+    public static Vector3 mouseDirection;
+    public static Vector3 hingeDirection;
 
     private void Start()
     {

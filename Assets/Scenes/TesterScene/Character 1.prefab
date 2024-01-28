@@ -451,7 +451,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.08000003, y: 1.0799999}
+  m_ConnectedAnchor: {x: 0.080000035, y: 1.1929997}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -734,7 +734,8 @@ GameObject:
   - component: {fileID: 635530037557724253}
   - component: {fileID: 823860612830668844}
   - component: {fileID: 4844617490315180726}
-  - component: {fileID: 3906410523132196007}
+  - component: {fileID: 7647589082735914300}
+  - component: {fileID: 3522329827547247980}
   m_Layer: 6
   m_Name: Hammer
   m_TagString: Untagged
@@ -900,7 +901,7 @@ PolygonCollider2D:
       - {x: 0.3424365, y: 0.043252133}
       - {x: 0.35222694, y: 0.92312694}
   m_UseDelaunayMesh: 0
---- !u!114 &3906410523132196007
+--- !u!114 &7647589082735914300
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -909,12 +910,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 4361094071894078335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 821b5a0eb98c38241814ebb0b36fb9dc, type: 3}
+  m_Script: {fileID: 11500000, guid: ab5a95494f0fb4542b254a7052f6f30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   game_state: {fileID: 11400000, guid: c65118ecb653c0845938f412c775c80c, type: 2}
-  holding: {fileID: 0}
-  holding_timer: 0
+  character: {fileID: 1761437618469990962}
+  RaycastDistance: 1
+  rayMask:
+    serializedVersion: 2
+    m_Bits: 1
+  SpringJoint: {fileID: 3522329827547247980}
+  force: 0
+--- !u!231 &3522329827547247980
+SpringJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361094071894078335}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 3
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0.4, y: -0.73}
+  m_ConnectedAnchor: {x: -0.11326474, y: -0.030494355}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.05
+  m_DampingRatio: 0
+  m_Frequency: 10
 --- !u!1 &4394724237264255918
 GameObject:
   m_ObjectHideFlags: 0

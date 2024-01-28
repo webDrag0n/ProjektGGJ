@@ -149,40 +149,48 @@ public class HammerTest : MonoBehaviour
 
     void Punch()
     {
-        RaycastHit2D hit = Physics2D.Raycast(hammer.transform.position, hingeDirection, punchDist, rayMask);
-
-        if (hit.collider != null)
+        if (hammer.GetComponent<SpringJoint2D>().enabled)
         {
-            Debug.Log("Punch hit:" + hit.collider.tag);
-            try
-            {
-                hit.collider.GetComponent<Bouncy>().EnableBounce();
-            }
-            catch (Exception e)
-            {
-                Debug.Log(e);
-            }
-            
-            int index = 0;
-            foreach (var tag in forceTag)
-            {
-                if (hit.collider.CompareTag(tag))
-                {
-                    // Apply force to the enemy
-                    Rigidbody2D other = hit.collider.GetComponent<Rigidbody2D>();
-                    if (other)
-                    {
-                        other.AddForce(hingeDirection * force[index] + Vector3.up * uppercutForce[index], ForceMode2D.Impulse);
-                    }
-                    
-                    // Apply force to the character (knock back)
-                    character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * counterForce[index], ForceMode2D.Impulse);
-                    return;
-                }
+            hammer.GetComponent<HoldTest>().Throw();
+        }
+        else
+        {
+            RaycastHit2D hit = Physics2D.Raycast(hammer.transform.position, hingeDirection, punchDist, rayMask);
 
-                index++;
+            if (hit.collider != null)
+            {
+                Debug.Log("Punch hit:" + hit.collider.tag);
+                try
+                {
+                    hit.collider.GetComponent<Bouncy>().EnableBounce();
+                }
+                catch (Exception e)
+                {
+                    Debug.Log(e);
+                }
+            
+                int index = 0;
+                foreach (var tag in forceTag)
+                {
+                    if (hit.collider.CompareTag(tag))
+                    {
+                        // Apply force to the enemy
+                        Rigidbody2D other = hit.collider.GetComponent<Rigidbody2D>();
+                        if (other)
+                        {
+                            other.AddForce(hingeDirection * force[index] + Vector3.up * uppercutForce[index], ForceMode2D.Impulse);
+                        }
+                    
+                        // Apply force to the character (knock back)
+                        character.GetComponent<Rigidbody2D>().AddForce(-hingeDirection * counterForce[index], ForceMode2D.Impulse);
+                        return;
+                    }
+
+                    index++;
+                }
             }
         }
+        
     }
 }
 

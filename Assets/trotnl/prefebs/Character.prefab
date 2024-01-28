@@ -268,6 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce943e95bb839314ab73744276b41d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 6043438314684787856}
   headHitThreshold: 20
 --- !u!1 &1761437618469990962
 GameObject:

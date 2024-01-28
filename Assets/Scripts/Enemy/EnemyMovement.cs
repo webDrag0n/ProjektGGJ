@@ -38,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("Obstacle") && changeDirectionTime <= 0)
         {
             direction = -direction;

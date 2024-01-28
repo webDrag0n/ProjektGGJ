@@ -20,9 +20,6 @@ public class ExplosionTest : MonoBehaviour
     public LayerMask rayMask;
     public float groundRaycastDistance = 1f;
     
-    public List<String> forceTag;
-    public List<float> force;
-    public List<float> counterForce;
     public float maxTorque = 300f;
     
     private bool isGrounded;
@@ -155,7 +152,7 @@ public class ExplosionTest : MonoBehaviour
 
         foreach (var hit in colliders)
         {
-            hit.GetComponent<Rigidbody>().AddExplosionForce(500f, transform.position, 10f);
+            hit.GetComponent<Rigidbody>().AddExplosionForce(500f, hammer.transform.position+hingeDirection, 10f);
             
         }
 

@@ -1249,6 +1249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7520587682608015203}
   - component: {fileID: 363487440170993389}
+  - component: {fileID: 3770873847541601436}
   m_Layer: 0
   m_Name: Sus
   m_TagString: Untagged
@@ -1269,8 +1270,8 @@ Transform:
   m_LocalScale: {x: 0.49385056, y: 0.49775234, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2830421437132196411}
   - {fileID: 9174041317144042195}
+  - {fileID: 2830421437132196411}
   m_Father: {fileID: 6043438314684787856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &363487440170993389
@@ -1325,6 +1326,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3770873847541601436
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8842393882213056317}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c83ee39799bb8b43a82f59a0df5f018, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9206218378535367362
 GameObject:
   m_ObjectHideFlags: 0

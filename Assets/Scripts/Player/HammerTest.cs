@@ -30,6 +30,8 @@ public class HammerTest : MonoBehaviour
     private Vector3 mouseDirection;
     public static Vector3 hingeDirection;
 
+    public AudioSource catch_sound;
+
     private void Start()
     {
         Instance = this;
@@ -149,6 +151,8 @@ public class HammerTest : MonoBehaviour
 
     void Punch()
     {
+        
+        catch_sound.Play();
         if (hammer.GetComponent<SpringJoint2D>().enabled)
         {
             hammer.GetComponent<HoldTest>().Throw();

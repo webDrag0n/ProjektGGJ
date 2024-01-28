@@ -13,6 +13,9 @@ public class HoldTest : MonoBehaviour
     private Rigidbody2D other;
     public SpringJoint2D SpringJoint;
     public float force;
+
+    public AudioSource catch_sound;
+    
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -25,6 +28,7 @@ public class HoldTest : MonoBehaviour
     
     private void Start()
     {
+        game_state.Reset();
         SpringJoint.breakAction = JointBreakAction2D.CallbackOnly;
     }
 
@@ -37,7 +41,7 @@ public class HoldTest : MonoBehaviour
 
     public void Throw()
     {
-        
+        catch_sound.Play();
         if (other)
         {
             // Fire

@@ -6520,6 +6520,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3661761207821076762, guid: 06eb1547c964a1d4cac683b7a67b6f42, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.08000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661761207821076762, guid: 06eb1547c964a1d4cac683b7a67b6f42, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 1.3359997
+      objectReference: {fileID: 0}
     - target: {fileID: 3906410523132196007, guid: 06eb1547c964a1d4cac683b7a67b6f42, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6641,8 +6649,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3992459116860621186, guid: 06eb1547c964a1d4cac683b7a67b6f42, type: 3}
-    - {fileID: 3906410523132196007, guid: 06eb1547c964a1d4cac683b7a67b6f42, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -56102,7 +56109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513583300}
   - component: {fileID: 1513583301}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57472,7 +57479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6661099900410263702, guid: bb778770a22c6ec4f8447122525c0bbc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5945187
+      value: -8.02
       objectReference: {fileID: 0}
     - target: {fileID: 6661099900410263702, guid: bb778770a22c6ec4f8447122525c0bbc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -60236,7 +60243,7 @@ GameObject:
   - component: {fileID: 1811276903}
   - component: {fileID: 1811276905}
   - component: {fileID: 1811276904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: front
   m_TagString: Untagged
   m_Icon: {fileID: 0}

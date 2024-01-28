@@ -283,9 +283,9 @@ GameObject:
   - component: {fileID: 4130867348681737057}
   - component: {fileID: 1272632141257789249}
   - component: {fileID: 3661761207821076762}
-  - component: {fileID: 3992459116860621186}
   - component: {fileID: 5428646932644990518}
   - component: {fileID: 634219116058956071}
+  - component: {fileID: 7053884309946813462}
   m_Layer: 6
   m_Name: Character 1
   m_TagString: Player
@@ -451,7 +451,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.080000035, y: 1.0799999}
+  m_ConnectedAnchor: {x: 0.08000003, y: 1.0799999}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -460,37 +460,6 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
---- !u!114 &3992459116860621186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761437618469990962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8735cdc095764a519098afee19690dcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hammer: {fileID: 823860612830668844}
-  character: {fileID: 4130867348681737057}
-  rayMask:
-    serializedVersion: 2
-    m_Bits: 1
-  groundRaycastDistance: 1
-  forceTag:
-  - Ground
-  - Enemy
-  force:
-  - 100
-  - 20
-  counterForce:
-  - 100
-  - 20
-  maxTorque: 300
-  punchCooldown: 1
-  uppercutForce: []
-  punchDist: 1.5
 --- !u!70 &5428646932644990518
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -544,6 +513,47 @@ RotationConstraint:
   m_Active: 1
   m_IsLocked: 0
   m_Sources: []
+--- !u!114 &7053884309946813462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761437618469990962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83307dc590d24d2499eb9c4243dec772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hammer: {fileID: 823860612830668844}
+  character: {fileID: 4130867348681737057}
+  rayMask:
+    serializedVersion: 2
+    m_Bits: 385
+  groundRaycastDistance: 1.1
+  forceTag:
+  - Ground
+  - Enemy
+  - Box
+  - Rock
+  force:
+  - 60
+  - 40
+  - 40
+  - 40
+  counterForce:
+  - 60
+  - 20
+  - 20
+  - 40
+  maxTorque: 300
+  punchCooldown: 0.2
+  uppercutForce:
+  - 60
+  - 20
+  - 20
+  - 40
+  punchDist: 1.3
 --- !u!1 &1817767285998147815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3199071827077668067}
+  - component: {fileID: 6329308024996055885}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -1275,6 +1286,31 @@ Transform:
   - {fileID: 469425558176067267}
   m_Father: {fileID: 6043438314684787856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6329308024996055885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7392310150507817722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83307dc590d24d2499eb9c4243dec772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hammer: {fileID: 0}
+  character: {fileID: 0}
+  rayMask:
+    serializedVersion: 2
+    m_Bits: 0
+  groundRaycastDistance: 1
+  forceTag: []
+  force: []
+  counterForce: []
+  maxTorque: 300
+  punchCooldown: 1
+  uppercutForce: []
+  punchDist: 1
 --- !u!1 &8777319640620405347
 GameObject:
   m_ObjectHideFlags: 0

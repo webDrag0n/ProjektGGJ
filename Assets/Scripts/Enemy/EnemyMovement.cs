@@ -21,10 +21,17 @@ public class EnemyMovement : MonoBehaviour
     Vector2 playerPos;
     public float range = 3f;
     float distance = 0f;
+
+    public LayerMask groundLayer; // 地面的图层
+    public float rayDistance = 0.001f; // 射线的检测距离
+    public bool isGrounded; // 物体是否在地面上
+    private CapsuleCollider2D cc; // 物体的碰撞器组件
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        cc = GetComponent<CapsuleCollider2D>(); // 获取碰撞器组件
         anim = GetComponent<Animator>();
         SetRandomDirection();
     }
@@ -63,14 +70,22 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         GetDistance();
+        CheckGround();
         SetAnim();
-        if (distance <= range || attackedTime > 0)
+        if (isGrounded)
         {
-            FollowPlayer();
+            if (distance <= range || attackedTime > 0)
+            {
+                FollowPlayer();
+            }
+            else
+            {
+                Walk();
+            }
         }
         else
         {
-            Walk();
+            anim.SetBool("isWalking", false);
         }
 
         if (changeDirectionTime > 0)
@@ -93,8 +108,6 @@ public class EnemyMovement : MonoBehaviour
     {
         if (direction.magnitude > 0f)
         {
-            //anim.SetFloat("InputX", direction.x);
-            //anim.SetFloat("InputY", direction.y);
             anim.SetBool("isWalking", true);
         }
         else
@@ -126,5 +139,26 @@ public class EnemyMovement : MonoBehaviour
             directionTime = defaultDirectionTime;
         }
         rb.MovePosition((Vector2)transform.position + direction * speed * Time.deltaTime);
+    }
+    void CheckGround()
+    {
+        // 从物体的底部中心发射一条向下的射线，检测是否碰到地面图层
+        //Vector2 origin = transform.position + Vector3.down * cc.size.y / 2;
+        Vector2 origin = transform.position;
+        RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, rayDistance, groundLayer);
+        Debug.DrawRay(origin, Vector2.down * rayDistance, Color.red);
+
+        // 如果碰到地面，设置isGrounded为true，并将刚体的重力缩放设置为0，防止物体下沉
+        if (hit.collider != null)
+        {
+            isGrounded = true;
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            // 如果没有碰到地面，设置isGrounded为false，并将刚体的重力缩放设置为1，让物体受重力影响
+            isGrounded = false;
+            rb.gravityScale = 1;
+        }
     }
 }

@@ -1688,7 +1688,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c2288ecba672f4da2e85b298d0bf99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
   direction: {x: 0, y: 0}
+  attackedTime: 0
+  range: 3
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  rayDistance: 0.1
+  isGrounded: 0
 --- !u!70 &9141051973480209035
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

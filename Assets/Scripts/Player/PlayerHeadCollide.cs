@@ -6,6 +6,7 @@ public class PlayerHeadCollide : MonoBehaviour
 {
     public Transform player;
     public float headHitThreshold = 20f; // Adjust this threshold as needed
+    public AudioSource hit_audio;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -33,6 +34,8 @@ public class PlayerHeadCollide : MonoBehaviour
     {
         player.gameObject.SetActive(false);
         Debug.Log("Character died!");
+        hit_audio.Play();
+        
         player.transform.position = Vector3.zero;
         player.transform.rotation = Quaternion.identity;
         player.gameObject.SetActive(true);

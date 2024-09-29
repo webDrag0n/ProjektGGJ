@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 1;
     public Vector2 direction = Vector2.zero;
 
-    const float defaultDirectionTime = 5f;
+    const float defaultDirectionTime = 2f;
     float directionTime = defaultDirectionTime;
 
     const float defaultChangeDirectionTime = 0.2f;

@@ -1295,7 +1295,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  rayDistance: 0.001
+  rayDistance: 1
   isGrounded: 0
 --- !u!114 &472964065260824542
 MonoBehaviour:
